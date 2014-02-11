@@ -2,3 +2,7 @@
 packages
 .project
 pubspec.lock
+node_modules
+cache
+build
+

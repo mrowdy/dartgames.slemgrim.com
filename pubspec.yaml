@@ -1,0 +1,6 @@
+name: dartgames.slemgrim.com
+description: website and examples for my blog about games in dart
+dependencies:
+  browser: any
+  Swipe:
+    git: https://github.com/Slemgrim/swipe
