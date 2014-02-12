@@ -1,0 +1,13 @@
+.article {
+  background-color: $color4;
+  min-height: 200px;
+  margin-bottom: 90px;
+  padding: 30px;
+
+  .headline {
+    font-size: $headingFontSize;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+}

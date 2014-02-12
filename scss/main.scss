@@ -1,8 +1,46 @@
 @import 'config';
 @import 'mixins';
+@import 'bourbon/_bourbon.scss';
 
-body {
-  margin: 0px;
-  background: $background; 
+@import 'gui/_swipe.scss';
+@import 'gui/_button.scss';
+@import 'gui/_header.scss';
+@import 'gui/_article.scss';
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: $color1; 
+  color: $color3;
+  font-family: $baseFont;
+  font-size: $baseFontSize;
+  line-height: 1.4em;
 }
- 
+
+* {
+  @include box-sizing(border-box);
+}
+
+.container {
+  width: 100%;
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+.slide {
+  padding: 10px;
+}
+
+.content {
+  height: 400px;
+  margin-top: 10px;
+}
+
+.navigation {
+  height: 400px;
+  margin-top: 10px;
+}
+
+
