@@ -1,0 +1,33 @@
+.columns {
+  position: relative;
+  @include clearfix();
+  
+  .left-col,
+  .right-col {
+    padding: 0 10px;
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    @include transition(all 1s);
+    z-index: 10;
+  }
+  
+  .right-col {
+    width: 90%;
+    left: 20%;
+    z-index: 5;
+  }
+  
+  &.show {
+    .left-col {
+      left: -90%;
+       -webkit-filter: blur(4px);
+      opacity: 0.8;
+    }
+    .right-col {
+      left: 10%;
+    }
+  } 
+}

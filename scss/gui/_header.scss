@@ -1,28 +1,32 @@
 .header {
-  width: 100%;
-  background-color: $color2;
-  color: $color3;
-  text-align: center;
-  margin: 0;
-  padding: 10px 0;
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
+  height: 60px;
+  border-bottom: 2px solid $whiteBoxColor1;
+  color: $whiteBoxColor1;
+  position: relative;
+  
+  .container {
+   position: relative;
+   padding: 5px 0;
+  }
   
   .title {
-    font-size: 1.5em;
+    margin: 10px 0 0;
+    font-family: $headingFont;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    display: block;
   }
   
-  .hide {
-    display: none;
+  .button {
+    padding: 14px 12px;
+    margin: 5px 10px;
+    &.menu {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
   
-  .back {
-    float: left;
-  }
-  
-  .menu {
-    float: right;
-  }
 }

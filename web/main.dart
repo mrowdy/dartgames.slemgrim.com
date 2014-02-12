@@ -1,38 +1,24 @@
 import 'dart:html';
-import 'package:Swipe/swipe.dart';
 
-Swipe swipe;
-Element swipeContainer;
 Element menuBtn;
-Element backBtn;
+Element columns;
 
 void main(){
-  initSwipe();
+  initMenu();
 } 
 
-void initSwipe(){
-  swipeContainer = querySelector('.swipe');
-  menuBtn = querySelector('.header .menu');
-  backBtn = querySelector('.header .back');
-  if(swipeContainer == null){
+void initMenu(){
+  menuBtn = querySelector('.menu');
+  columns = querySelector('.columns');
+  if(menuBtn == null){
     return;
   }
-  
-  swipe = new Swipe(swipeContainer);
-  
-  if(backBtn != null){
-    backBtn.onClick.listen((_){
-      swipe.prev();
-      backBtn.classes.add('hide');
-      menuBtn.classes.remove('hide');
-    });
+  menuBtn.onClick.listen(toggleMenu);
+}
+
+void toggleMenu(MouseEvent evt){
+  if(columns == null){
+    return;
   }
-  
-  if(menuBtn != null){
-    menuBtn.onClick.listen((_){
-      swipe.next();
-      menuBtn.classes.add('hide');
-      backBtn.classes.remove('hide');
-    });
-  }
+  columns.classes.toggle('show');
 }

@@ -6,50 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/main.css">
     
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:800' rel='stylesheet' type='text/css'>
     
-     <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
         
     <title>index</title>
   </head>
- 
   <body>      
-
-    <div class="header">
-      <div class="container">
-        <button class="button menu">menu</button>
-        <span class="title">Dart Games 101</span>
-        <button class="button back hide">back</button>
-      </div>
-    </div>
-   
-    <div class="container swipe">
-      <div class="swipe-wrap">
-        <div class="slide">
-          <div class="content">
-            <article class="article">
-                <h2 class="headline">Article Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut </p>
-            </article>
-        <article class="article">
-                <h2 class="headline">Article Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut </p>
-            </article>        <article class="article">
-                <h2 class="headline">Article Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut </p>
-            </article>
-            
+    <div class="outer">
+      
+      <header class="header">
+        <div class="container">
+          <button class="button menu right">Menu</button>
+          <span class="title">Dart Games <span>101</span></span>  
+        </div>
+      </header>
+      
+      <div class="container columns">
+        <div class="left-col">
+           <ul class="article-list">
+            <li>
+              <article class="whitebox article">
+                <h2 class="title">Just a title</h2>
+                <p class="excerpt">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque 
+                </p>
+              </article>
+            </li>
+            <li>
+              <article class="whitebox article">
+                <h2 class="title">Just a title</h2>
+                <p class="excerpt">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque 
+                </p>
+              </article>
+            </li>          
+            <li>
+              <article class="whitebox article">
+                <h2 class="title">Just a title</h2>
+                <p class="excerpt">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque 
+                </p>
+              </article>
+            </li>
+          </ul>
+          <div class="container">
+            <footer class="actions">
+              <a href="#prev" class="button aButton left">&lt;&lt;</a>
+              <span class="button aButton inactive">1/5</span>
+              <a href="#next" class="button aButton right">&gt;&gt;</a>
+            </footer>
           </div>
         </div>
-        <div class="slide">
-          <div class="navigation">
-            derp;
-          </div>
+        <div class="right-col">
+          <nav class="navigation">
+            <ul>
+              <li><a class="button nButton" href="#">Home</a></li>
+              <li><a class="button nButton" href="#">Canvas Series</a></li>
+              <li><a class="button nButton" href="#">Physics Series</a></li>
+              <li><a class="button nButton" href="#">Imprint</a></li>
+            </ul>
+          </nav>
         </div>
-      </div>
+      </div>   
+      
+          
     </div>
 
     <script type="application/dart" src="main.dart"></script>

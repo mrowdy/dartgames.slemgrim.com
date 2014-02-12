@@ -1,7 +1,30 @@
 .button {
-  background-color: $color3;
-  border: none;
-  color: $color1;
+  $color: darken($whiteBoxColor1, 40%);
+  color: $color;
+  border: 1px solid $color;
+  border-radius: 3px;
+  background: transparent;
+  text-transform: uppercase;
   display: inline-block;
-  height: 30px;
+  padding: 8px 12px;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: none;
+  @include transition(all .5s);
+  
+  &:hover {
+    color: $backgroundColor;
+    background-color: $whiteBoxColor1;
+  }
+  
+  &.inactive {
+     $color: darken($whiteBoxColor1, 70%);
+     color: $color;
+     border: 1px solid $color;
+  }
+
+
+  &.nButton {
+    width: 100%;
+  }
 }

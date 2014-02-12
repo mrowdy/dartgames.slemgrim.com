@@ -2,45 +2,51 @@
 @import 'mixins';
 @import 'bourbon/_bourbon.scss';
 
-@import 'gui/_swipe.scss';
-@import 'gui/_button.scss';
 @import 'gui/_header.scss';
+@import 'gui/_columns.scss';
+@import 'gui/_whitebox.scss';
+@import 'gui/_article-list.scss';
 @import 'gui/_article.scss';
+@import 'gui/_button.scss';
+@import 'gui/_navigation.scss';
+
 
 body,
 html {
   margin: 0;
   padding: 0;
-  height: 100%;
-  background: $color1; 
-  color: $color3;
+  background-color: $backgroundColor;
+  color: $baseColor;
   font-family: $baseFont;
-  font-size: $baseFontSize;
-  line-height: 1.4em;
+  font-size: 18px;
+  line-height: 29px;
 }
 
 * {
   @include box-sizing(border-box);
 }
 
-.container {
+.outer {
+  margin-bottom: 50px;
   width: 100%;
-  max-width: $maxWidth;
-  margin: 0 auto;
+  #overflow-x: hidden;
 }
 
-.slide {
-  padding: 10px;
+.container {
+
 }
 
-.content {
-  height: 400px;
-  margin-top: 10px;
+.left {
+  float: left;
 }
 
-.navigation {
-  height: 400px;
-  margin-top: 10px;
+.right {
+  float: right;
 }
 
-
+.actions {
+  clear: both;
+  text-align: center;
+  padding: 10px 15px;
+  margin: 0 10px;
+}
