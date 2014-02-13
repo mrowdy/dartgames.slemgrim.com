@@ -12,21 +12,25 @@
   
   .title {
     margin: 10px 0 0;
+    padding: 0 10px;
     font-family: $headingFont;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 50px;
-    text-align: center;
+    font-size: 30px;
     display: block;
   }
   
   .button {
-    padding: 14px 12px;
-    margin: 5px 10px;
+    padding: 10px;
+    margin: 6px 10px;
     &.menu {
       position: absolute;
       right: 0;
       top: 0;
+    }
+    
+    span {
+      font-size: 22px;
     }
   }
   

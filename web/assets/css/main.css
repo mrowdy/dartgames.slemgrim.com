@@ -13,26 +13,31 @@
 }
 .header .title {
   margin: 10px 0 0;
+  padding: 0 10px;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 50px;
-  text-align: center;
+  font-size: 30px;
   display: block;
 }
 .header .button {
-  padding: 14px 12px;
-  margin: 5px 10px;
+  padding: 10px;
+  margin: 6px 10px;
 }
 .header .button.menu {
   position: absolute;
   right: 0;
   top: 0;
 }
+.header .button span {
+  font-size: 22px;
+}
 
 .columns {
   position: relative;
   *zoom: 1;
+  width: 200%;
+  padding: 0;
 }
 .columns:before, .columns:after {
   content: " ";
@@ -43,43 +48,46 @@
 }
 .columns .left-col,
 .columns .right-col {
-  padding: 0 10px;
-  position: absolute;
-  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  float: left;
+  position: relative;
+  max-width: 50%;
   width: 100%;
+  overflow-x: hidden;
   left: 0;
   top: 0;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   z-index: 10;
 }
 .columns .left-col {
   background-color: #343434;
+  box-shadow: 5px 0 20px #272727;
 }
 .columns .right-col {
-  margin: 0 0 0 10px;
-  width: 90%;
-  -webkit-transform: translate(20%);
-  -moz-transform: translate(20%);
-  -ms-transform: translate(20%);
-  -o-transform: translate(20%);
-  transform: translate(20%);
+  margin: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 5;
 }
 .columns.show .left-col {
-  -webkit-transform: translate(-90%);
-  -moz-transform: translate(-90%);
-  -ms-transform: translate(-90%);
-  -o-transform: translate(-90%);
-  transform: translate(-90%);
+  -webkit-transform: translateX(-90%) translateZ(0);
+  -moz-transform: translateX(-90%) translateZ(0);
+  -ms-transform: translateX(-90%) translateZ(0);
+  -o-transform: translateX(-90%) translateZ(0);
+  transform: translateX(-90%) translateZ(0);
 }
 .columns.show .right-col {
-  -webkit-transform: translate(10%);
-  -moz-transform: translate(10%);
-  -ms-transform: translate(10%);
-  -o-transform: translate(10%);
-  transform: translate(10%);
+  -webkit-transform: translateX(-90%) translateZ(0);
+  -moz-transform: translateX(-90%) translateZ(0);
+  -ms-transform: translateX(-90%) translateZ(0);
+  -o-transform: translateX(-90%) translateZ(0);
+  transform: translateX(-90%) translateZ(0);
 }
 
 .whitebox {
@@ -89,7 +97,7 @@
 
 .article-list {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
 }
 .article-list li {
   margin: 10px 0;
@@ -153,10 +161,67 @@
 .navigation li {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #343434;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #343434), color-stop(100%, #313131));
+  background-image: -webkit-linear-gradient(#343434, #313131);
+  background-image: linear-gradient(#343434, #313131);
+  text-align: left;
+  padding-left: 50px;
 }
-.navigation li:nth-of-type(odd) {
-  background-color: #eeeeee;
+.navigation li .icon {
+  position: absolute;
+  left: 60px;
+  font-size: 25px;
+}
+.navigation li a {
+  font-size: 19.8px;
+  display: inline-block;
+  color: #eeeeee;
+  padding: 20px;
+  margin-left: 30px;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'dartgames';
+  src: url("../fonts/icons/dartgames.eot?-ghqufx");
+  src: url("../fonts/icons//dartgames.eot?#iefix-ghqufx") format("embedded-opentype"), url("../fonts/icons//dartgames.woff?-ghqufx") format("woff"), url("../fonts/icons//dartgames.ttf?-ghqufx") format("truetype"), url("../fonts/icons//dartgames.svg?-ghqufx#dartgames") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'dartgames';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-list:before {
+  content: "\e600";
+}
+
+.icon-search:before {
+  content: "\e601";
+}
+
+.icon-arrow-left:before {
+  content: "\e602";
+}
+
+.icon-arrow-right:before {
+  content: "\e603";
+}
+
+.icon-home:before {
+  content: "\e604";
 }
 
 body,
@@ -168,7 +233,6 @@ html {
   font-family: "Droid Serif", serif;
   font-size: 18px;
   line-height: 29px;
-  height: 100%;
 }
 
 * {
@@ -180,9 +244,7 @@ html {
 .outer {
   margin-bottom: 50px;
   width: 100%;
-  #overflow-x: hidden;
-  background-color: #eeeeee;
-  min-height: 100%;
+  overflow-x: hidden;
 }
 
 .left {
@@ -197,5 +259,5 @@ html {
   clear: both;
   text-align: center;
   padding: 10px 15px;
-  margin: 0 10px;
+  margin: 0;
 }

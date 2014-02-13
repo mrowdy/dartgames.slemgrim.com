@@ -7,10 +7,24 @@
   li {
     margin: 0;
     padding: 0;
-    background-color: $whiteBoxColor1;
+    @include linear-gradient($backgroundColor, darken($backgroundColor, 1%));
+    text-align: left;
+    padding-left: 50px;
     
-    &:nth-of-type(odd){
-      background-color: $whiteBoxColor2;
+    .icon {
+      position: absolute;
+      left: 60px;
+      font-size: 25px;
+    }
+    
+    a {
+      font-size: $baseFontSize * 1.1;
+      display: inline-block;
+      color: $whiteBoxColor2; 
+      padding: 20px;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 100;
     }
   }
 }
