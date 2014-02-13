@@ -20,6 +20,7 @@ html {
   font-family: $baseFont;
   font-size: 18px;
   line-height: 29px;
+  height: 100%;
 }
 
 * {
@@ -30,6 +31,8 @@ html {
   margin-bottom: 50px;
   width: 100%;
   #overflow-x: hidden;
+  background-color: $whiteBoxColor2;
+  min-height: 100%;
 }
 
 .container {

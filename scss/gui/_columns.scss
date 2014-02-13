@@ -14,20 +14,23 @@
     z-index: 10;
   }
   
+  .left-col {
+      background-color: $backgroundColor;
+   }
+  
   .right-col {
+    margin: 0 0 0 10px;
     width: 90%;
-    left: 20%;
+    @include transform(translate(20%));
     z-index: 5;
   }
   
   &.show {
     .left-col {
-      left: -90%;
-       -webkit-filter: blur(4px);
-      opacity: 0.8;
+      @include transform(translate(-90%));
     }
     .right-col {
-      left: 10%;
+      @include transform(translate(10%));
     }
   } 
 }

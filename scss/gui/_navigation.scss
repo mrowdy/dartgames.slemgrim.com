@@ -5,7 +5,12 @@
   }
   
   li {
-    margin: 10px;
+    margin: 0;
     padding: 0;
+    background-color: $whiteBoxColor1;
+    
+    &:nth-of-type(odd){
+      background-color: $whiteBoxColor2;
+    }
   }
 }

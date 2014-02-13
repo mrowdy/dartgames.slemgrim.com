@@ -4,6 +4,7 @@
   height: 60px;
   border-bottom: 2px solid white;
   color: white;
+  background-color: #343434;
   position: relative;
 }
 .header .container {
@@ -53,18 +54,32 @@
   transition: all 1s;
   z-index: 10;
 }
+.columns .left-col {
+  background-color: #343434;
+}
 .columns .right-col {
+  margin: 0 0 0 10px;
   width: 90%;
-  left: 20%;
+  -webkit-transform: translate(20%);
+  -moz-transform: translate(20%);
+  -ms-transform: translate(20%);
+  -o-transform: translate(20%);
+  transform: translate(20%);
   z-index: 5;
 }
 .columns.show .left-col {
-  left: -90%;
-  -webkit-filter: blur(4px);
-  opacity: 0.8;
+  -webkit-transform: translate(-90%);
+  -moz-transform: translate(-90%);
+  -ms-transform: translate(-90%);
+  -o-transform: translate(-90%);
+  transform: translate(-90%);
 }
 .columns.show .right-col {
-  left: 10%;
+  -webkit-transform: translate(10%);
+  -moz-transform: translate(10%);
+  -ms-transform: translate(10%);
+  -o-transform: translate(10%);
+  transform: translate(10%);
 }
 
 .whitebox {
@@ -136,8 +151,12 @@
   padding: 0;
 }
 .navigation li {
-  margin: 10px;
+  margin: 0;
   padding: 0;
+  background-color: white;
+}
+.navigation li:nth-of-type(odd) {
+  background-color: #eeeeee;
 }
 
 body,
@@ -149,6 +168,7 @@ html {
   font-family: "Droid Serif", serif;
   font-size: 18px;
   line-height: 29px;
+  height: 100%;
 }
 
 * {
@@ -161,6 +181,8 @@ html {
   margin-bottom: 50px;
   width: 100%;
   #overflow-x: hidden;
+  background-color: #eeeeee;
+  min-height: 100%;
 }
 
 .left {
