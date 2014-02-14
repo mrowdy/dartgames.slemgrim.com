@@ -1,7 +1,9 @@
 import 'dart:html';
+import 'swipe.dart';
 
 Element menuBtn;
 Element columns;
+Swipe swipe;
 
 void main(){
   initMenu();
@@ -14,6 +16,7 @@ void initMenu(){
     return;
   }
   menuBtn.onClick.listen(toggleMenu);
+  swipe = new Swipe(columns);
 }
 
 void toggleMenu(MouseEvent evt){
