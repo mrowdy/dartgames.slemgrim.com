@@ -7,12 +7,12 @@ part 'field.dart';
 
 class Minenfeld{
   
-  int _rows = 10;
-  int _cols = 10;
+  int _rows = 8;
+  int _cols = 8;
   int _mines = 10;
   
-  int _width = 300;
-  int _height = 300;
+  int _width = 500;
+  int _height = 500;
   
   List<Field> fields = new List<Field>();
   
@@ -20,7 +20,7 @@ class Minenfeld{
   CanvasElement _canvas;
   CanvasRenderingContext2D _ctx;
   
-  Minenfeld(this._container, [this._rows = 10, this._cols = 10, this._mines = 10]){
+  Minenfeld(this._container){
     _setupCanvas();
     _setupFields();
     _handleInputs();
@@ -54,7 +54,17 @@ class Minenfeld{
       fields.add(field);
     }
     
-    fields[4].hasMine = true;
+    fields.forEach((Field field){
+      List<Field> surrounding = _getSurroundingFields(field);
+      if(!field.hasMine){
+        surrounding.forEach((Field field2){
+          if(field2.hasMine){
+            field.surroundingMines++;
+          }
+        });
+      }
+    });
+    
   }
   
   void _render(){
@@ -77,7 +87,15 @@ class Minenfeld{
       }
     }
     _ctx..fillStyle = color
-        ..fillRect(field.position.x * fieldWidth + 1, field.position.y * fieldWidth + 1, fieldWidth - 2, fieldHeight - 2);
+        ..fillRect(field.position.x * fieldWidth + 1, field.position.y * fieldHeight + 1, fieldWidth - 2, fieldHeight - 2);
+    
+    if(field.isOpen && !field.hasMine){
+      _ctx..font = "14pt Calibri"
+          ..fillStyle = '#ffffff'
+          ..fillText(field.surroundingMines.toString(), field.position.x * fieldWidth + 9, field.position.y * fieldHeight + fieldHeight - 8); 
+      
+    }
+
   }
   
   void _handleInputs(){
@@ -99,7 +117,15 @@ class Minenfeld{
     if(field.hasMine == true){
       fields.forEach((field){ field.isOpen = true; });
       _gameOver();
+    } else if(field.surroundingMines == 0){
+      _getSurroundingFields(field).forEach((Field surr){
+        if(!surr.hasMine && !surr.isOpen && surr != field){
+          _openField(surr.index);
+        }
+      });
     }
+    
+    
     _render();
   }
  
@@ -115,6 +141,23 @@ class Minenfeld{
     }
     
     return mineIndices;
+  }
+  
+  List<Field> _getSurroundingFields(Field start){
+    List<Field> surrounding = new List<Field>();
+    
+    fields.forEach((Field field){
+      if(field.position.x >= start.position.x  - 1 
+         && field.position.x <= start.position.x + 1
+         && field.position.y >= start.position.y - 1
+         && field.position.y <= start.position.y + 1
+         && field != start
+      ){
+        surrounding.add(field);
+      }
+    });
+    
+    return surrounding;
   }
   
 }

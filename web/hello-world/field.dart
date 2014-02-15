@@ -4,9 +4,11 @@ class Field{
   
   final int index;
   bool isOpen = false;
-  bool isClicked = false;
+  int surroundingMines = 0;
   bool hasMine = false;
   Point position;
   
   Field(this.index, this.position);
+  
+  
 }
