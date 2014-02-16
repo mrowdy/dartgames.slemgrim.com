@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #395D33;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+}
+
+#container {
+  margin: 0 auto;
+  position: relative;
+}
+
+canvas {
+ display: block;
+ margin: 10px auto;
+}
+
+.game-message {
+  display: none;
+  width: 100%;
+  font-size: 60px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+}
+
+
+.game-message.show {
+  display: block;
+}

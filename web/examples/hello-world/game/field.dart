@@ -1,7 +1,7 @@
 part of minenfeld;
 
 class Field{
-  
+
   final int index;
   final Point position;
   bool isOpen = false;
