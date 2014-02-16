@@ -49,22 +49,21 @@ class Minenfeld{
       
       Field field = new Field(i, position);
       if(mineIndices.contains(i)){
-        field.hasMine = true;
+        field.isMine = true;
       }
       fields.add(field);
     }
     
     fields.forEach((Field field){
       List<Field> surrounding = _getSurroundingFields(field);
-      if(!field.hasMine){
+      if(!field.isMine){
         surrounding.forEach((Field field2){
-          if(field2.hasMine){
+          if(field2.isMine){
             field.surroundingMines++;
           }
         });
       }
     });
-    
   }
   
   void _render(){
@@ -80,7 +79,7 @@ class Minenfeld{
     
     String color = '#00ff00';
     if(field.isOpen) {
-      if(field.hasMine){
+      if(field.isMine){
         color = '#ff0000';
       } else {
         color= '#0000ff';
@@ -89,11 +88,20 @@ class Minenfeld{
     _ctx..fillStyle = color
         ..fillRect(field.position.x * fieldWidth + 1, field.position.y * fieldHeight + 1, fieldWidth - 2, fieldHeight - 2);
     
-    if(field.isOpen && !field.hasMine){
+    if(field.isOpen && !field.isMine && field.surroundingMines > 0){
       _ctx..font = "14pt Calibri"
           ..fillStyle = '#ffffff'
           ..fillText(field.surroundingMines.toString(), field.position.x * fieldWidth + 9, field.position.y * fieldHeight + fieldHeight - 8); 
       
+    }
+    
+    if(field.isFlagged && !field.isOpen){
+      _ctx..strokeStyle = '#ffffff'
+          ..beginPath()
+          ..arc(field.position.x * fieldWidth + fieldWidth / 2, field.position.y * fieldHeight +  fieldHeight / 2, 10, 0,  2 * PI, false)
+          ..stroke()
+          ..closePath();
+
     }
 
   }
@@ -101,7 +109,17 @@ class Minenfeld{
   void _handleInputs(){
     _canvas.onMouseUp.listen((MouseEvent event){
       int index = _positionToIndex(event.offset.x, event.offset.y);
-      _openField(index);
+      
+      if(event.ctrlKey){
+        _flagField(index);
+      } else {
+        _openField(index);
+      }
+    });
+    
+    _canvas.onContextMenu.listen((MouseEvent event){
+      event.preventDefault();
+      int index = _positionToIndex(event.offset.x, event.offset.y);
     });
   }
   
@@ -113,19 +131,29 @@ class Minenfeld{
   
   void _openField(int index){
     Field field = fields[index];
+    if(field.isOpen || field.isFlagged ){
+      return;
+    }
     field.isOpen = true;
-    if(field.hasMine == true){
+    if(field.isMine == true){
       fields.forEach((field){ field.isOpen = true; });
       _gameOver();
     } else if(field.surroundingMines == 0){
       _getSurroundingFields(field).forEach((Field surr){
-        if(!surr.hasMine && !surr.isOpen && surr != field){
+        if(!surr.isMine && !surr.isOpen && surr != field){
           _openField(surr.index);
         }
       });
     }
-    
-    
+    _render();
+  }
+  
+  void _flagField(int index){
+    Field field = fields[index];
+    if(field.isOpen){
+      return;
+    }
+    field.isFlagged = !field.isFlagged;
     _render();
   }
  
