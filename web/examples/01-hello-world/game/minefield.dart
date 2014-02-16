@@ -43,6 +43,11 @@ class Minefield{
     'mine': '#ff0000'
   };
   
+  /**
+   * Creates a new minefield instance into [_container] with [_width]px * [_height]px.
+   * The game will have [_cols] columns and [_rows] rows with [_mines] mines.
+   * 
+   */
   Minefield(this._container, [this._width = 320, this._height = 320, this._rows = 10, this._cols = 10, this._mines = 10]){
     _setupCanvas();
     setup();
@@ -138,7 +143,7 @@ class Minefield{
         return;
       }
       
-      if(event.ctrlKey){
+      if(event.button == 2){
         _flagField(index);
       } else {
         _openField(index);
