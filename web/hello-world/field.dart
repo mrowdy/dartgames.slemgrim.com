@@ -3,13 +3,12 @@ part of minenfeld;
 class Field{
   
   final int index;
+  final Point position;
   bool isOpen = false;
-  int surroundingMines = 0;
   bool isMine = false;
   bool isFlagged = false;
-  Point position;
+  int surroundingMines = 0;
   
   Field(this.index, this.position);
-  
-  
+   
 }

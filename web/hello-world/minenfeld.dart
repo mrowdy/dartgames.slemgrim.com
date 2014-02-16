@@ -7,12 +7,15 @@ part 'field.dart';
 
 class Minenfeld{
   
-  int _rows = 8;
-  int _cols = 8;
+  int _rows = 10;
+  int _cols = 10;
   int _mines = 10;
   
   int _width = 500;
   int _height = 500;
+  
+  double fieldWidth;
+  double fieldHeight;
   
   List<Field> fields = new List<Field>();
   
@@ -27,13 +30,32 @@ class Minenfeld{
     _render();
   }
   
+  Map<String, String> _colors = {
+    'background': '#395D33',
+    'closed': '#4DBD33',
+    'open': '#734523',
+    'numbers': '#ffffff',
+    'flag': '#ffffff',
+    'mine': '#ff0000'
+  };
+  
   void _setupCanvas(){
     _canvas = new CanvasElement();
     _canvas..width = _width
            ..height = _height;
     
+    fieldWidth = _width / _cols;
+    fieldHeight = _height / _cols;
+    
     _ctx = _canvas.getContext('2d');
     _container.append(_canvas);
+  }
+  
+  void _update(){
+    _render();
+    if(_isFinished()){
+      print('finished');
+    }
   }
   
   void _setupFields(){
@@ -67,43 +89,42 @@ class Minenfeld{
   }
   
   void _render(){
-    _ctx..fillStyle = '#cccccc'
+    _ctx..fillStyle = _colors['background']
         ..fillRect(0, 0, _width, _height);
     
     fields.forEach((field) => _renderField(field));
   }
   
   void _renderField(Field field){
-    double fieldWidth = _width / _cols;
-    double fieldHeight = _height / _cols;
-    
-    String color = '#00ff00';
+    String color = _colors['closed'];
     if(field.isOpen) {
-      if(field.isMine){
-        color = '#ff0000';
-      } else {
-        color= '#0000ff';
-      }
+      color = _colors['open'];
     }
+    
     _ctx..fillStyle = color
         ..fillRect(field.position.x * fieldWidth + 1, field.position.y * fieldHeight + 1, fieldWidth - 2, fieldHeight - 2);
     
     if(field.isOpen && !field.isMine && field.surroundingMines > 0){
       _ctx..font = "14pt Calibri"
-          ..fillStyle = '#ffffff'
-          ..fillText(field.surroundingMines.toString(), field.position.x * fieldWidth + 9, field.position.y * fieldHeight + fieldHeight - 8); 
+          ..fillStyle = _colors['numbers']
+          ..fillText(field.surroundingMines.toString(), field.position.x * fieldWidth + 5, field.position.y * fieldHeight + fieldHeight - 5); 
       
     }
     
     if(field.isFlagged && !field.isOpen){
-      _ctx..strokeStyle = '#ffffff'
-          ..beginPath()
-          ..arc(field.position.x * fieldWidth + fieldWidth / 2, field.position.y * fieldHeight +  fieldHeight / 2, 10, 0,  2 * PI, false)
-          ..stroke()
-          ..closePath();
-
+      _drawCircle(field, _colors['flag']);
+    } else if(field.isMine && field.isOpen){
+      _drawCircle(field, _colors['mine']);
     }
 
+  }
+  
+  void _drawCircle(Field field, String color){
+    _ctx..fillStyle = color
+        ..beginPath()
+        ..arc(field.position.x * fieldWidth + fieldWidth / 2, field.position.y * fieldHeight +  fieldHeight / 2, 10, 0,  2 * PI, false)
+        ..fill()
+        ..closePath();
   }
   
   void _handleInputs(){
@@ -145,7 +166,7 @@ class Minenfeld{
         }
       });
     }
-    _render();
+    _update();
   }
   
   void _flagField(int index){
@@ -154,7 +175,7 @@ class Minenfeld{
       return;
     }
     field.isFlagged = !field.isFlagged;
-    _render();
+    _update();
   }
  
   void _gameOver(){
@@ -165,10 +186,32 @@ class Minenfeld{
     List<int> mineIndices = new List<int>();
     Random rand = new Random();
     while(mineIndices.length < count){
-      mineIndices.add(rand.nextInt(_rows * _cols));
+      int index = rand.nextInt(_rows * _cols);
+      if(!mineIndices.contains(index)){
+        mineIndices.add(index);
+      }
     }
     
     return mineIndices;
+  }
+  
+  bool _isFinished(){
+    bool allOpen = true;
+    bool allFlagged = true;
+    fields.forEach((Field field){
+      // All mines flagged?
+      if(field.isMine && !field.isFlagged){
+        allFlagged = false;
+      }
+      
+      // All fields which are not mines opened
+      if(!field.isMine && !field.isOpen){
+        allOpen = false;
+      }
+      
+    });
+    
+    return allOpen || allFlagged;
   }
   
   List<Field> _getSurroundingFields(Field start){
