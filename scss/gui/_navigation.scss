@@ -1,0 +1,30 @@
+.navigation {
+  ul {
+    margin: 20px 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+    @include linear-gradient($backgroundColor, darken($backgroundColor, 1%));
+    text-align: left;
+    padding-left: 50px;
+    
+    .icon {
+      position: absolute;
+      left: 60px;
+      font-size: 25px;
+    }
+    
+    a {
+      font-size: $baseFontSize * 1.1;
+      display: inline-block;
+      color: $whiteBoxColor2; 
+      padding: 20px;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 100;
+    }
+  }
+}

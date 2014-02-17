@@ -1,0 +1,37 @@
+.header {
+  height: 60px;
+  border-bottom: 2px solid $whiteBoxColor1;
+  color: $whiteBoxColor1;
+  background-color: $backgroundColor;
+  position: relative;
+  
+  .container {
+   position: relative;
+   padding: 5px 0;
+  }
+  
+  .title {
+    margin: 10px 0 0;
+    padding: 0 10px;
+    font-family: $headingFont;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+    display: block;
+  }
+  
+  .button {
+    padding: 10px;
+    margin: 6px 10px;
+    &.menu {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+    span {
+      font-size: 22px;
+    }
+  }
+  
+}
