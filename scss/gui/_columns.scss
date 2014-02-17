@@ -3,6 +3,7 @@
   @include clearfix;
   width: 200%;
   padding: 0;
+  margin-top: 60px;
   
   .left-col,
   .right-col {
@@ -21,7 +22,6 @@
   
   .left-col {
     background-color: $backgroundColor;
-    box-shadow: 5px 0 20px darken($backgroundColor, 5%);
    }
   
   .right-col {
@@ -32,10 +32,12 @@
   
   &.show {
     .left-col {
-      @include transform(translateX(-90%) translateZ(0));
+      @include transform(translateX(-90%) translateZ(0) scale(.9));
+      background-color: transparent;
+      opacity: .5;
     }
     .right-col {
       @include transform(translateX(-90%) translateZ(0));
     }
-  } 
+  }
 }

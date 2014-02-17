@@ -10,12 +10,14 @@
 @import 'gui/_button.scss';
 @import 'gui/_navigation.scss';
 @import 'gui/_icon.scss';
+@import 'gui/_hero.scss';
 
 body,
 html {
   margin: 0;
   padding: 0;
-  background-color: $backgroundColor;
+  background-color: $highlightColor;
+  background-repeat: repeat;
   color: $baseColor;
   font-family: $baseFont;
   font-size: 18px;

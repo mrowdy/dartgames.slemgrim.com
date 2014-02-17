@@ -1,12 +1,17 @@
 .header {
   height: 60px;
-  border-bottom: 2px solid $whiteBoxColor1;
-  color: $whiteBoxColor1;
-  background-color: $backgroundColor;
-  position: relative;
+  position: fixed;
+  color: $navigationColor;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 60px;
+  z-index: 100;
+  background-color: $highlightColor;
+  background-image: url(../images/header-picture.jpg);
+  background-position: 50% 0px;
   
   .container {
-   position: relative;
    padding: 5px 0;
   }
   
@@ -33,5 +38,4 @@
       font-size: 22px;
     }
   }
-  
 }

@@ -1,15 +1,10 @@
 .article-list {
   margin: 0;
-  padding: 0 10px;
+  padding: 0 15px;
+  list-style-type: none;
   
   li {
-    margin: 10px 0;
+    margin: 15px 0;
     padding: 0;
-    
-    &:nth-of-type(odd){
-      .article {
-        background-color: $whiteBoxColor2;
-      }
-    }
   }
 }
