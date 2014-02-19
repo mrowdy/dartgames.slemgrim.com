@@ -1,4 +1,4 @@
-part of minenfeld;
+part of minefield;
 
 class Field{
 

@@ -1,4 +1,4 @@
-library minenfeld;
+library minefield;
 
 import 'dart:html';
 import 'dart:math';
