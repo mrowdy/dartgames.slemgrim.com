@@ -166,22 +166,22 @@
   background-color: rgba(255, 255, 255, 0.85);
 }
 
-.navigation ul {
+.sidebar ul {
   margin: 20px 0;
   padding: 0;
 }
-.navigation li {
+.sidebar li {
   margin: 0;
   padding: 0;
   text-align: left;
   padding-left: 50px;
 }
-.navigation li .icon {
+.sidebar li .icon {
   position: absolute;
   left: 60px;
   font-size: 25px;
 }
-.navigation li a {
+.sidebar li a {
   font-size: 19.8px;
   display: inline-block;
   color: white;
@@ -262,6 +262,10 @@ html {
   overflow-x: hidden;
 }
 
+.admin-bar .header {
+  margin-top: 32px;
+}
+
 .left {
   float: left;
 }
@@ -270,7 +274,7 @@ html {
   float: right;
 }
 
-.actions {
+.pagination {
   clear: both;
   text-align: center;
   padding: 10px 15px;

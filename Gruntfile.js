@@ -18,28 +18,38 @@ module.exports = function(grunt) {
         
         watch: {
     		  scripts: {
-    		    files: '**/*.scss',
-    		    tasks: ['sass']
-    		  }
+    		    files: ['**/*.scss'],
+    		    tasks: ['sass', 'copy']
+    		  } 
 		    },
 		    
-		    'sftp-deploy': {
+		'sftp-deploy': {
           build: {
             auth: {
-              host: '10.10.10.5',
+              host: '188.226.135.234',
               port: 22,
               authKey: 'key1'
             },
             src: 'web',
-            dest: '/media/datastore/dartgames',
+            dest: '/var/www/dartgames.slemgrim.com/wordpress/wp-content/themes/dartgames',
             server_sep: '/'
           }
+        },
+
+        copy: {
+            main: {
+                files: [
+                    {expand: true, src: ['packages/**'], dest: '/web/packages'},
+                ]
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sftp-deploy');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+
     
     grunt.registerTask('default', ['sass']);
     grunt.registerTask('deploy', ['sass', 'sftp-deploy']);
