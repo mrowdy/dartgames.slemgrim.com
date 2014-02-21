@@ -32,7 +32,7 @@
                             </li>
                         <?php endif; ?>
                     </ul>
-                    <?php get_template_part('partials/_pagination'); ?>
+
                 </div>
                 <div class="right-col">
                     <?php get_sidebar(); ?>

@@ -1,4 +1,5 @@
 .sidebar {
+  margin-top: 20px;
   ul {
     margin: 20px 0;
     padding: 0;
@@ -8,7 +9,56 @@
     margin: 0;
     padding: 0;
     text-align: left;
-    padding-left: 50px;
+    border-bottom: 1px solid  rgba(0, 0, 0, .3);
+    position: relative;
+
+    ul {
+      background-color: $backgroundColor;
+      box-shadow: inset 0 3px 15px rgba(0, 0, 0, 0.5), inset 0 -1px 15px rgba(0, 0, 0, 0.3);
+      margin: 0;
+      position: relative;
+
+      &:before {
+        content: '';
+        display: block;
+        background-color: #ffffff;
+        width: 16px;
+        height: 4px;
+        position: absolute;
+        margin: -2px -8px 0 0;
+        top: 0;
+        left: 0;
+        box-shadow: 0 0 20px rgba(255, 255, 255, .5);
+      }
+
+      li {
+        padding-left: 20px;
+        &:after {
+          left: 30px;
+          width: 8px;
+          height: 8px;
+          margin: 0 -4px -4px 0;
+          border-radius: 4px;
+        }
+
+        &:last-of-type:after {
+          content: none;
+        }
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      background-color: #ffffff;
+      width: 16px;
+      height: 4px;
+      position: absolute;
+      margin: 0 -8px -2px 0;
+      bottom: 0;
+      left: 0;
+      box-shadow: 0 0 20px rgba(255, 255, 255, .5);
+    }
     
     .icon {
       position: absolute;
@@ -20,7 +70,7 @@
       font-size: $baseFontSize * 1.1;
       display: inline-block;
       color: $whiteBoxColor; 
-      padding: 20px;
+      padding: 10px;
       margin-left: 30px;
       text-decoration: none;
       font-weight: 100;

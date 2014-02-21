@@ -9,7 +9,9 @@
   z-index: 100;
   background-color: $highlightColor;
   background-image: url(../images/header-picture.jpg);
+  background-size: 100%;
   background-position: 50% 0px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, .5);
   
   .container {
    padding: 5px 0;
@@ -23,6 +25,8 @@
     font-weight: 800;
     font-size: 30px;
     display: block;
+    opacity: 0;
+    float: left;
   }
   
   .button {

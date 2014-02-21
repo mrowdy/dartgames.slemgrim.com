@@ -9,9 +9,11 @@
   left: 0;
   height: 60px;
   z-index: 100;
-  background-color: #1344a0;
+  background-color: #0e1215;
   background-image: url(../images/header-picture.jpg);
+  background-size: 100%;
   background-position: 50% 0px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 .header .container {
   padding: 5px 0;
@@ -24,6 +26,8 @@
   font-weight: 800;
   font-size: 30px;
   display: block;
+  opacity: 0;
+  float: left;
 }
 .header .button {
   padding: 10px;
@@ -41,7 +45,7 @@
 .columns {
   position: relative;
   *zoom: 1;
-  width: 200%;
+  width: 100%;
   padding: 0;
   margin-top: 60px;
 }
@@ -56,9 +60,8 @@
 .columns .right-col {
   padding: 0;
   margin: 0;
-  float: left;
   position: relative;
-  max-width: 50%;
+  max-width: 100%;
   width: 100%;
   overflow-x: hidden;
   left: 0;
@@ -69,32 +72,37 @@
   z-index: 10;
 }
 .columns .left-col {
-  background-color: #e7edf1;
+  background-color: #2f2f2f;
 }
 .columns .right-col {
-  margin: 0;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
+  margin: 60px 0 0 -15px;
+  position: fixed;
+  top: 0;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
   z-index: 5;
 }
 .columns.show .left-col {
-  -webkit-transform: translateX(-90%) translateZ(0) scale(0.9);
-  -moz-transform: translateX(-90%) translateZ(0) scale(0.9);
-  -ms-transform: translateX(-90%) translateZ(0) scale(0.9);
-  -o-transform: translateX(-90%) translateZ(0) scale(0.9);
-  transform: translateX(-90%) translateZ(0) scale(0.9);
-  background-color: transparent;
-  opacity: .5;
-}
-.columns.show .right-col {
   -webkit-transform: translateX(-90%) translateZ(0);
   -moz-transform: translateX(-90%) translateZ(0);
   -ms-transform: translateX(-90%) translateZ(0);
   -o-transform: translateX(-90%) translateZ(0);
   transform: translateX(-90%) translateZ(0);
+  background-color: transparent;
+  opacity: .5;
+}
+.columns.show .left-col .hero {
+  margin: 0px 15px;
+}
+.columns.show .right-col {
+  -webkit-transform: translateX(10%) translateZ(0);
+  -moz-transform: translateX(10%) translateZ(0);
+  -ms-transform: translateX(10%) translateZ(0);
+  -o-transform: translateX(10%) translateZ(0);
+  transform: translateX(10%) translateZ(0);
 }
 
 .whitebox {
@@ -147,7 +155,7 @@
   outline: none;
 }
 .button:hover {
-  color: #e7edf1;
+  color: #2f2f2f;
   background-color: white;
 }
 .button.inactive {
@@ -162,10 +170,13 @@
   border-color: rgba(255, 255, 255, 0.85);
 }
 .button.menu:hover {
-  color: #1344a0;
+  color: #0e1215;
   background-color: rgba(255, 255, 255, 0.85);
 }
 
+.sidebar {
+  margin-top: 20px;
+}
 .sidebar ul {
   margin: 20px 0;
   padding: 0;
@@ -174,7 +185,51 @@
   margin: 0;
   padding: 0;
   text-align: left;
-  padding-left: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.sidebar li ul {
+  background-color: #2f2f2f;
+  box-shadow: inset 0 3px 15px rgba(0, 0, 0, 0.5), inset 0 -1px 15px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  position: relative;
+}
+.sidebar li ul:before {
+  content: '';
+  display: block;
+  background-color: #ffffff;
+  width: 16px;
+  height: 4px;
+  position: absolute;
+  margin: -2px -8px 0 0;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+.sidebar li ul li {
+  padding-left: 20px;
+}
+.sidebar li ul li:after {
+  left: 30px;
+  width: 8px;
+  height: 8px;
+  margin: 0 -4px -4px 0;
+  border-radius: 4px;
+}
+.sidebar li ul li:last-of-type:after {
+  content: none;
+}
+.sidebar li:after {
+  content: '';
+  display: block;
+  background-color: #ffffff;
+  width: 16px;
+  height: 4px;
+  position: absolute;
+  margin: 0 -8px -2px 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 .sidebar li .icon {
   position: absolute;
@@ -185,7 +240,7 @@
   font-size: 19.8px;
   display: inline-block;
   color: white;
-  padding: 20px;
+  padding: 10px;
   margin-left: 30px;
   text-decoration: none;
   font-weight: 100;
@@ -233,18 +288,19 @@
 }
 
 .hero {
-  height: 300px;
+  height: 200px;
   background-image: url(../images/header-picture.jpg);
   background-position: 50% -60px;
+  background-size: 100%;
 }
 
 body,
 html {
   margin: 0;
   padding: 0;
-  background-color: #1344a0;
+  background-color: #363944;
   background-repeat: repeat;
-  color: #44414c;
+  color: #363944;
   font-family: "Droid Serif", serif;
   font-size: 18px;
   line-height: 29px;
