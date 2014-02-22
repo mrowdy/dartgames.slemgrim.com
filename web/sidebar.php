@@ -1,4 +1,6 @@
 <nav class="sidebar">
+    <?php get_search_form(); ?>
+
     <?php wp_nav_menu( array( 'theme_location' => 'sidebar-menu-1' ) ); ?>
 
     <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>

@@ -1,5 +1,6 @@
 .article {
-  padding: 30px;
+  padding: 15px;
+  overflow: hidden;
   
   .title {
     margin: 10px 0;
@@ -7,15 +8,14 @@
     text-transform: uppercase;
     font-family: $headingFont;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 48px;
     letter-spacing: -1px;
     padding-bottom: 20px;
     border-bottom: 3px solid #333;
   }
-  
-  .excerpt {
-    margin: 15px 0 15px;
-    padding: 0;
-  }
+
 }
+
+
+@import '../responsive/_article.scss';

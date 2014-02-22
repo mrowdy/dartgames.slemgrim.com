@@ -1,0 +1,76 @@
+.article {
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    padding: 0;
+    border: none;
+
+    &.alignleft {
+      margin: 15px 15px 15px 0;
+      float: left;
+    }
+
+    &.alignright {
+      margin: 15px 0 15px 15px;
+      float: right;
+    }
+  }
+
+  a {
+    color: $highlightColor;
+    text-decoration: none;
+    @include transition(all 1s);
+    font-weight: bold;
+
+    &:hover {
+      background-color: $highlightColor;
+      color: $whiteBoxColor;
+    }
+  }
+
+  a img {
+    position: relative;
+  }
+  a.image {
+    &:after {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      right: 0;
+      content: "\e601";
+      font-family: 'dartgames';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      width: 50px;
+      height: 50px;
+      background-color: $highlightColor;
+      color: $whiteBoxColor;
+    }
+  }
+
+  code,
+  pre,
+  .code {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $headingFont;
+    text-transform: uppercase;
+  }
+}
+

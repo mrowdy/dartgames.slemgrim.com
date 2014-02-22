@@ -1,0 +1,14 @@
+@mixin navigation-square() {
+  &:after {
+    content: '';
+    display: block;
+    background-color: #ffffff;
+    width: 16px;
+    height: 4px;
+    position: absolute;
+    margin: 0 -8px -2px 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, .5);
+  }
+}

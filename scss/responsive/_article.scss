@@ -1,0 +1,13 @@
+@media all and (min-width: $brpt1) {
+  .article {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media all and (min-width: $brpt2) {
+  .article {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

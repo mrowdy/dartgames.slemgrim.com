@@ -8,15 +8,17 @@ new Dartgames();
 class Dartgames{
 
     public function __construct(){
-        add_action( 'after_setup_theme', array($this, 'setup'));
-        add_action( 'widgets_init', array($this, 'widgets_init'));
-        add_action( 'init', array($this, 'register_menues'));
+        add_action('after_setup_theme', array($this, 'setup'));
+        add_action('widgets_init', array($this, 'widgets_init'));
+        add_action('init', array($this, 'register_menues'));
+        add_filter('image_send_to_editor', array($this, 'linked_images_class'), 10, 9);
     }
 
     public function setup() {
-        load_theme_textdomain( 'dartgames', get_template_directory() . '/languages' );
-        add_theme_support( 'automatic-feed-links' );
-        add_theme_support( 'menus' );
+        load_theme_textdomain('dartgames', get_template_directory() . '/languages' );
+        add_theme_support('automatic-feed-links' );
+        add_theme_support('menus' );
+        add_theme_support('html5', array('search-form'));
 
     }
 
@@ -52,4 +54,15 @@ class Dartgames{
         ) );
     }
 
+    public function linked_images_class($html, $id, $caption, $title, $align, $url, $size, $alt = '' ){
+        $classes = 'img';
+        if ( preg_match('/<a.*? class=".*?">/', $html) ) {
+            $html = preg_replace('/(<a.*? class=".*?)(".*?>)/', '$1 ' . $classes . '$2', $html);
+        } else {
+            $html = preg_replace('/(<a.*?)>/', '$1 class="' . $classes . '" >', $html);
+        }
+
+        return $html;
+    }
 }
+

@@ -35,6 +35,12 @@ void initMenu(){
       title.classes.remove('show');
     }
   });
+  
+  Element search = querySelector('.search-field');
+  if(search != null){
+    search.onFocus.listen((evt) => search.parent.parent.classes.add('show'));
+    search.onBlur.listen((evt) => search.parent.parent.classes.remove('show'));
+  }
 }
 
 void toggleMenu(MouseEvent evt){

@@ -109,6 +109,7 @@
   -o-transform: translateX(50%);
   transform: translateX(50%);
   z-index: 5;
+  padding-right: 10%;
 }
 .columns.show .left-col {
   -webkit-transform: translateX(-90%) translateZ(0);
@@ -149,6 +150,7 @@
     float: left;
     width: 30%;
     margin: 0;
+    padding-right: 0;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -190,7 +192,8 @@
 }
 
 .article {
-  padding: 30px;
+  padding: 15px;
+  overflow: hidden;
 }
 .article .title {
   margin: 10px 0;
@@ -198,17 +201,25 @@
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 48px;
   letter-spacing: -1px;
   padding-bottom: 20px;
   border-bottom: 3px solid #333;
 }
-.article .excerpt {
-  margin: 15px 0 15px;
-  padding: 0;
-}
 
+@media all and (min-width: 500px) {
+  .article {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media all and (min-width: 960px) {
+  .article {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 .button {
   color: #999999;
   border: 1px solid #999999;
@@ -308,11 +319,6 @@
   left: 0;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
-.sidebar li .icon {
-  position: absolute;
-  left: 60px;
-  font-size: 25px;
-}
 .sidebar li a {
   font-size: 19.8px;
   display: inline-block;
@@ -389,6 +395,161 @@
     display: none;
   }
 }
+.article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+  padding: 0;
+  border: none;
+}
+.article img.alignleft {
+  margin: 15px 15px 15px 0;
+  float: left;
+}
+.article img.alignright {
+  margin: 15px 0 15px 15px;
+  float: right;
+}
+.article a {
+  color: #13449e;
+  text-decoration: none;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  font-weight: bold;
+}
+.article a:hover {
+  background-color: #13449e;
+  color: white;
+}
+.article a img {
+  position: relative;
+}
+.article a.image:after {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+  content: "\e601";
+  font-family: 'dartgames';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 50px;
+  height: 50px;
+  background-color: #13449e;
+  color: white;
+}
+.article code,
+.article pre,
+.article .code {
+  font-size: 12px;
+  line-height: 16px;
+}
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.search-form {
+  position: relative;
+  margin: 0 0 50px;
+  padding: 0;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+  height: 50px;
+}
+.search-form:after {
+  content: '';
+  display: block;
+  background-color: #ffffff;
+  width: 16px;
+  height: 4px;
+  position: absolute;
+  margin: 0 -8px -2px 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+.search-form .screen-reader-text {
+  display: none;
+}
+.search-form .search-field {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 19.8px;
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 100;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 50px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.search-form .search-field::-webkit-input-placeholder {
+  color: white;
+}
+.search-form .search-field:-moz-placeholder {
+  color: white;
+}
+.search-form .search-field::-moz-placeholder {
+  color: white;
+}
+.search-form .search-field:-ms-input-placeholder {
+  color: white;
+}
+.search-form .search-field:focus {
+  background-color: #2f2f2f;
+  box-shadow: inset 0 3px 15px rgba(0, 0, 0, 0.5), inset 0 -1px 15px rgba(0, 0, 0, 0.3);
+}
+.search-form .search-submit {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  -webkit-transition: right 0.5s;
+  -moz-transition: right 0.5s;
+  transition: right 0.5s;
+}
+.search-form .search-submit i {
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  position: relative;
+  top: -3px;
+}
+.search-form.show .search-submit {
+  right: 0;
+}
+
 body,
 html {
   margin: 0;

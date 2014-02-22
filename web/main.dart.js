@@ -5290,7 +5290,7 @@ var $$ = {};
     static: {"": "ListQueue__INITIAL_CAPACITY"}
   },
   _ListQueueIterator: {
-    "": "Object;_queue,_end,_modificationCount,_position,_collection$_current",
+    "": "Object;_queue,_end,_modificationCount,_collection$_position,_collection$_current",
     get$current: function() {
       return this._collection$_current;
     },
@@ -5299,7 +5299,7 @@ var $$ = {};
       t1 = this._queue;
       if (this._modificationCount !== t1._modificationCount)
         H.throwExpression(P.ConcurrentModificationError$(t1));
-      t2 = this._position;
+      t2 = this._collection$_position;
       if (t2 === this._end) {
         this._collection$_current = null;
         return false;
@@ -5309,7 +5309,7 @@ var $$ = {};
       if (t2 >= t3)
         return H.ioore(t1, t2);
       this._collection$_current = t1[t2];
-      this._position = (t2 + 1 & t3 - 1) >>> 0;
+      this._collection$_position = (t2 + 1 & t3 - 1) >>> 0;
       return true;
     }
   }
@@ -5701,7 +5701,7 @@ var $$ = {};
   },
   HtmlElement: {
     "": "Element;",
-    "%": "HTMLAppletElement|HTMLAreaElement|HTMLBRElement|HTMLBaseElement|HTMLBaseFontElement|HTMLBodyElement|HTMLButtonElement|HTMLCanvasElement|HTMLContentElement|HTMLDListElement|HTMLDataListElement|HTMLDetailsElement|HTMLDialogElement|HTMLDirectoryElement|HTMLDivElement|HTMLEmbedElement|HTMLFieldSetElement|HTMLFontElement|HTMLFrameElement|HTMLFrameSetElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLIFrameElement|HTMLImageElement|HTMLKeygenElement|HTMLLIElement|HTMLLabelElement|HTMLLegendElement|HTMLLinkElement|HTMLMapElement|HTMLMarqueeElement|HTMLMenuElement|HTMLMetaElement|HTMLMeterElement|HTMLModElement|HTMLOListElement|HTMLObjectElement|HTMLOptGroupElement|HTMLOptionElement|HTMLOutputElement|HTMLParagraphElement|HTMLParamElement|HTMLPreElement|HTMLProgressElement|HTMLQuoteElement|HTMLScriptElement|HTMLShadowElement|HTMLSourceElement|HTMLSpanElement|HTMLStyleElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTemplateElement|HTMLTextAreaElement|HTMLTitleElement|HTMLTrackElement|HTMLUListElement|HTMLUnknownElement;HTMLElement"
+    "%": "HTMLAppletElement|HTMLAreaElement|HTMLBRElement|HTMLBaseElement|HTMLBaseFontElement|HTMLButtonElement|HTMLCanvasElement|HTMLContentElement|HTMLDListElement|HTMLDataListElement|HTMLDetailsElement|HTMLDialogElement|HTMLDirectoryElement|HTMLDivElement|HTMLEmbedElement|HTMLFieldSetElement|HTMLFontElement|HTMLFrameElement|HTMLFrameSetElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLIFrameElement|HTMLImageElement|HTMLKeygenElement|HTMLLIElement|HTMLLabelElement|HTMLLegendElement|HTMLLinkElement|HTMLMapElement|HTMLMarqueeElement|HTMLMenuElement|HTMLMetaElement|HTMLMeterElement|HTMLModElement|HTMLOListElement|HTMLObjectElement|HTMLOptGroupElement|HTMLOptionElement|HTMLOutputElement|HTMLParagraphElement|HTMLParamElement|HTMLPreElement|HTMLProgressElement|HTMLQuoteElement|HTMLScriptElement|HTMLShadowElement|HTMLSourceElement|HTMLSpanElement|HTMLStyleElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTemplateElement|HTMLTextAreaElement|HTMLTitleElement|HTMLTrackElement|HTMLUListElement|HTMLUnknownElement;HTMLElement"
   },
   AnchorElement: {
     "": "HtmlElement;",
@@ -5709,6 +5709,16 @@ var $$ = {};
       return receiver.toString();
     },
     "%": "HTMLAnchorElement"
+  },
+  BodyElement: {
+    "": "HtmlElement;",
+    get$onBlur: function(receiver) {
+      return H.setRuntimeTypeInfo(new W._ElementEventStreamImpl(receiver, C.EventStreamProvider_blur._eventType, false), [null]);
+    },
+    get$onFocus: function(receiver) {
+      return H.setRuntimeTypeInfo(new W._ElementEventStreamImpl(receiver, C.EventStreamProvider_focus._eventType, false), [null]);
+    },
+    "%": "HTMLBodyElement"
   },
   CharacterData: {
     "": "Node;length=",
@@ -5745,6 +5755,12 @@ var $$ = {};
     },
     toString$0: function(receiver) {
       return receiver.localName;
+    },
+    get$onBlur: function(receiver) {
+      return H.setRuntimeTypeInfo(new W._ElementEventStreamImpl(receiver, C.EventStreamProvider_blur._eventType, false), [null]);
+    },
+    get$onFocus: function(receiver) {
+      return H.setRuntimeTypeInfo(new W._ElementEventStreamImpl(receiver, C.EventStreamProvider_focus._eventType, false), [null]);
     },
     $isElement: true,
     "%": ";Element"
@@ -6009,18 +6025,18 @@ var $$ = {};
     $isEfficientLength: true
   },
   FixedSizeListIterator: {
-    "": "Object;_array,_html$_length,_html$_position,_html$_current",
+    "": "Object;_array,_html$_length,_position,_html$_current",
     moveNext$0: function() {
       var nextPosition, t1;
-      nextPosition = this._html$_position + 1;
+      nextPosition = this._position + 1;
       t1 = this._html$_length;
       if (nextPosition < t1) {
         this._html$_current = J.$index$asx(this._array, nextPosition);
-        this._html$_position = nextPosition;
+        this._position = nextPosition;
         return true;
       }
       this._html$_current = null;
-      this._html$_position = t1;
+      this._position = t1;
       return false;
     },
     get$current: function() {
@@ -6219,7 +6235,7 @@ var $$ = {};
     F.initMenu();
   }, "call$0", "main$closure", 0, 0, 0],
   initMenu: function() {
-    var t1, headerEl, title, t2, heroes;
+    var t1, headerEl, title, t2, heroes, search;
     $.menuBtn = document.querySelector(".menu");
     $.columns = document.querySelector(".columns");
     t1 = $.menuBtn;
@@ -6239,6 +6255,14 @@ var $$ = {};
     t1 = H.setRuntimeTypeInfo(new W._EventStream(window, t1, false), [null]);
     H.setRuntimeTypeInfo(new W._EventStreamSubscription(0, t1._target, t1._eventType, W._wrapZone(new V.ScrollToggle(0, 200, false, t2).get$_scroll_toggle$_handleScroll()), t1._useCapture), [H.getTypeArgumentByIndex(t1, 0)])._tryResume$0();
     H.setRuntimeTypeInfo(new P._ControllerStream(t2), [null]).listen$1(new F.initMenu_closure0(title));
+    search = document.querySelector(".search-field");
+    if (search != null) {
+      t1 = J.getInterceptor$x(search);
+      t2 = t1.get$onFocus(search);
+      H.setRuntimeTypeInfo(new W._EventStreamSubscription(0, t2._target, t2._eventType, W._wrapZone(new F.initMenu_closure1(search)), t2._useCapture), [H.getTypeArgumentByIndex(t2, 0)])._tryResume$0();
+      t1 = t1.get$onBlur(search);
+      H.setRuntimeTypeInfo(new W._EventStreamSubscription(0, t1._target, t1._eventType, W._wrapZone(new F.initMenu_closure2(search)), t1._useCapture), [H.getTypeArgumentByIndex(t1, 0)])._tryResume$0();
+    }
   },
   toggleMenu: [function(evt) {
     var t1 = $.columns;
@@ -6264,6 +6288,20 @@ var $$ = {};
         t1 = J.get$classes$x(t1);
         t1.remove$1(t1, "show");
       }
+    }
+  },
+  initMenu_closure1: {
+    "": "Closure:11;search_1",
+    call$1: function(evt) {
+      var t1 = J.get$classes$x(this.search_1.parentElement.parentElement);
+      return t1.add$1(t1, "show");
+    }
+  },
+  initMenu_closure2: {
+    "": "Closure:11;search_2",
+    call$1: function(evt) {
+      var t1 = J.get$classes$x(this.search_2.parentElement.parentElement);
+      return t1.remove$1(t1, "show");
     }
   }
 },
@@ -6519,7 +6557,9 @@ C.C_DynamicRuntimeType = new H.DynamicRuntimeType();
 C.C__DelayedDone = new P._DelayedDone();
 C.C__RootZone = new P._RootZone();
 C.Duration_0 = new P.Duration(0);
+C.EventStreamProvider_blur = new W.EventStreamProvider("blur");
 C.EventStreamProvider_click = new W.EventStreamProvider("click");
+C.EventStreamProvider_focus = new W.EventStreamProvider("focus");
 C.EventStreamProvider_scroll = new W.EventStreamProvider("scroll");
 C.JSArray_methods = J.JSArray.prototype;
 C.JSInt_methods = J.JSInt.prototype;
