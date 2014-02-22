@@ -1,0 +1,38 @@
+@media all and (min-width: $brpt2) {
+  .columns {
+    margin-top: 0;
+
+    .left-col,
+    .right-col {
+      @include transition(none);
+    }
+
+    .left-col {
+      width: 70%;
+      float: left;
+    }
+
+    .right-col {
+      position: relative;
+      float: left;
+      width: 30%;
+      margin: 0;
+      @include transform(translateX(0));
+    }
+
+    &.show {
+      .left-col {
+        @include transform(translateX(0) translateZ(0));
+        background-color: $backgroundColor;
+        opacity: 1;
+        .hero {
+          margin: 0px;
+        }
+      }
+      .right-col {
+        @include transform(translateX(0) translateZ(0));
+      }
+    }
+
+  }
+}

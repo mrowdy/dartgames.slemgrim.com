@@ -19,10 +19,10 @@ module.exports = function(grunt) {
         watch: {
     		  scripts: {
     		    files: ['**/*.scss'],
-    		    tasks: ['sass', 'sftp-deploy']
-    		  } 
+    		    tasks: ['sass']
+    		  }
 		    },
-		    
+
 		'sftp-deploy': {
           build: {
             auth: {

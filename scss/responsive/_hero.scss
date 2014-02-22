@@ -3,4 +3,16 @@
     height: 200px;
     background-size: 1600px;
   }
-} 
+}
+
+@media all and (min-width: $brpt2) {
+  .hero {
+    &.hero-full {
+      display: block;
+    }
+
+    &.hero-small {
+      display: none;
+    }
+  }
+}

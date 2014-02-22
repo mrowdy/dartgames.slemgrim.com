@@ -12,19 +12,25 @@
   background-size: 1000px;
   background-position: 50% 0px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, .5);
+
   
   .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
     margin: 0;
     padding: 15px 10px;
     font-family: $headingFont;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 30px;
+    line-height: 30px;
     display: inline-block;
-    background-color: rgba(19, 68, 158, 0.9);
+    background-color: rgba(19, 68, 158, 0.7);
     box-shadow: 10px 0 20px rgba(19, 68, 158, 0.3);
-    float: left;
-    @include transition(opacity .5s);
+    @include transition(opacity 1s);
     opacity: 0; 
     
     &.show {
@@ -40,6 +46,7 @@
       position: absolute;
       right: 0;
       top: 0;
+      z-index: 20;
     }
     
     span {

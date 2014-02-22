@@ -14,10 +14,10 @@
         <div class="outer">
 
             <?php get_header(); ?>
-
+            <div class="hero hero-full"></div>
             <div class="container columns">
                 <div class="left-col">
-                    <div class="hero"></div>
+                    <div class="hero hero-small"></div>
 
                     <ul class="article-list">
                         <?php if ( have_posts() ) : ?>

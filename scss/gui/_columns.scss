@@ -2,8 +2,9 @@
   position: relative;
   @include clearfix;
   width: 100%;
+  max-width: $maxWidth;
   padding: 0;
-  margin-top: 60px;
+  margin: 60px auto 0;
   
   .left-col,
   .right-col {
@@ -21,6 +22,7 @@
   
   .left-col {
     background-color: $backgroundColor;
+    padding-bottom: 50px;
    }
   
   .right-col {
@@ -45,3 +47,5 @@
     }
   }
 }
+
+@import '../responsive/_columns.scss';

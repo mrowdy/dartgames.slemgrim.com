@@ -22,9 +22,11 @@ void initMenu(){
   Element headerEl = querySelector('.header');
   Element title = headerEl.querySelector('.title');
   Parallax header = new Parallax(headerEl, 2.0, 0, true);
-  Element heroEl = querySelector('.hero');
-  Parallax hero = new Parallax(heroEl, 2.0, 60);
-  
+  List<Element> heroes = querySelectorAll('.hero');
+  heroes.forEach((Element hero){
+    new Parallax(hero, 2.0, 60);
+  });
+
   ScrollToggle scroll = new ScrollToggle(200);
   scroll.onToggle.listen((status){
     if(status == true){

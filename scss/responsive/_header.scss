@@ -4,8 +4,10 @@
   }
 }
 
-@media all and (max-width: $brpt1) {
+@media all and (min-width: $brpt2) {
   .header {
-
+    .button {
+      display: none;
+    }
   }
-} 
+}
