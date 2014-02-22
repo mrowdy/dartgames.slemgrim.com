@@ -1,3 +1,5 @@
+library parallax;
+
 import 'dart:html';
 
 class Parallax {

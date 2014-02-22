@@ -32,7 +32,7 @@
     color: $navigationColor;
     border-color: $navigationColor;
     &:hover {
-      color: $highlightColor;
+      color: $backgroundColor;
       background-color: $navigationColor;
     }
   }

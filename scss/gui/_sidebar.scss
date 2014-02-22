@@ -39,6 +39,15 @@
           height: 8px;
           margin: 0 -4px -4px 0;
           border-radius: 4px;
+          box-shadow: none;
+        }
+        
+        &:first-of-type {
+          padding-top: 8px;
+        }
+        
+        &:last-of-type {
+          padding-bottom: 8px;
         }
 
         &:last-of-type:after {

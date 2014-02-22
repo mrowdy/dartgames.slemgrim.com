@@ -4,7 +4,7 @@
 $backgroundColor: #2f2f2f;
 $whiteBoxColor: #ffffff;
 $baseColor: #363944;
-$highlightColor: #0E1215;
+$highlightColor: #13449e;
 $navigationColor: rgba(255,255,255,0.85);
 
 /* Font */
@@ -12,3 +12,7 @@ $navigationColor: rgba(255,255,255,0.85);
 $baseFont: 'Droid Serif', serif;
 $headingFont: 'Open Sans', sans-serif;
 $baseFontSize: 18px;
+
+/* Breakpoints */
+
+$brpt1: 500px;

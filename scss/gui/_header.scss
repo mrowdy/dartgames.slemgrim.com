@@ -9,24 +9,28 @@
   z-index: 100;
   background-color: $highlightColor;
   background-image: url(../images/header-picture.jpg);
-  background-size: 100%;
+  background-size: 1000px;
   background-position: 50% 0px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, .5);
   
-  .container {
-   padding: 5px 0;
-  }
-  
   .title {
-    margin: 10px 0 0;
-    padding: 0 10px;
+    margin: 0;
+    padding: 15px 10px;
     font-family: $headingFont;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 30px;
-    display: block;
-    opacity: 0;
+    display: inline-block;
+    background-color: rgba(19, 68, 158, 0.9);
+    box-shadow: 10px 0 20px rgba(19, 68, 158, 0.3);
     float: left;
+    @include transition(opacity .5s);
+    opacity: 0; 
+    
+    &.show {
+      opacity: 1;
+    }
+    
   }
   
   .button {
@@ -43,3 +47,5 @@
     }
   }
 }
+
+@import '../responsive/_header.scss';

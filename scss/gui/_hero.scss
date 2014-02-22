@@ -1,6 +1,8 @@
 .hero {
-  height: 200px;
+  height: 100px;
   background-image: url(../images/header-picture.jpg);
   background-position: 50% -60px;
-  background-size: 100%;
+  background-size: 1000px;
 }
+
+@import '../responsive/_hero.scss';
