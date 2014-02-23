@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6dfea1c-b89d-4161-b228-c98aba6e4c59" name="Default" comment="" />
+    <list default="true" id="f6dfea1c-b89d-4161-b228-c98aba6e4c59" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/partials/_disqus.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/content/_disqus.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/gui/_pagination.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/responsive/_pagination.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partials/_article.php" afterPath="$PROJECT_DIR$/web/partials/_article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/gui/_article.scss" afterPath="$PROJECT_DIR$/scss/gui/_article.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/gui/_button.scss" afterPath="$PROJECT_DIR$/scss/gui/_button.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/gui/_columns.scss" afterPath="$PROJECT_DIR$/scss/gui/_columns.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/responsive/_columns.scss" afterPath="$PROJECT_DIR$/scss/responsive/_columns.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/gui/_header.scss" afterPath="$PROJECT_DIR$/scss/gui/_header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/responsive/_header.scss" afterPath="$PROJECT_DIR$/scss/responsive/_header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/partials/_pagination.php" afterPath="$PROJECT_DIR$/web/partials/_pagination.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/config.scss" afterPath="$PROJECT_DIR$/scss/config.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dartgames.slemgrim.com.iml" afterPath="$PROJECT_DIR$/.idea/dartgames.slemgrim.com.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/header.php" afterPath="$PROJECT_DIR$/web/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.php" afterPath="$PROJECT_DIR$/web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/main.css" afterPath="$PROJECT_DIR$/web/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/main.scss" afterPath="$PROJECT_DIR$/scss/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/mixins.scss" afterPath="$PROJECT_DIR$/scss/mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/searchform.php" afterPath="$PROJECT_DIR$/web/searchform.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="dartgames.slemgrim.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,66 +46,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/functions.php">
+      <file leaf-file-name="_article-list.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/gui/_article-list.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="42" selection-start="231" selection-end="262" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="442">
+            <state line="6" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.php">
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="21" selection-start="1220" selection-end="1220" vertical-scroll-proportion="-14.038462" vertical-offset="162" max-vertical-offset="986">
+            <state line="5" column="42" selection-start="199" selection-end="199" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="221">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.html">
+      <file leaf-file-name="_pagination.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/partials/_pagination.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="7" selection-start="193" selection-end="193" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
-              <folding>
-                <marker date="1392403484172" expanded="true" signature="31:192" placeholder="..." />
-                <marker date="1392403484172" expanded="true" signature="40:50" placeholder="..." />
-                <marker date="1392403484172" expanded="true" signature="59:184" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_article.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/partials/_article.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="10" selection-start="271" selection-end="271" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="187">
-              <folding>
-                <marker date="1392404428033" expanded="true" signature="33:270" placeholder="..." />
-                <marker date="1392404428033" expanded="true" signature="218:259" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_article.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scss/gui/_article.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="24" selection-start="355" selection-end="355" vertical-scroll-proportion="0.5483871" vertical-offset="0" max-vertical-offset="544">
+            <state line="3" column="37" selection-start="180" selection-end="180" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="221">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/sidebar.php">
+      <file leaf-file-name="_pagination.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/gui/_pagination.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="6" selection-start="383" selection-end="383" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
-              <folding>
-                <marker date="1392403070015" expanded="true" signature="23:382" placeholder="..." />
-                <marker date="1392403070015" expanded="true" signature="32:375" placeholder="..." />
-              </folding>
+            <state line="37" column="3" selection-start="530" selection-end="530" vertical-scroll-proportion="-12.333333" vertical-offset="0" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_pagination.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/responsive/_pagination.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="5" selection-start="94" selection-end="94" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="204">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_header.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scss/responsive/_header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="33" selection-start="215" selection-end="215" vertical-scroll-proportion="0.2803298" vertical-offset="0" max-vertical-offset="849">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/config.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="13" selection-start="348" selection-end="348" vertical-scroll-proportion="-7.0" vertical-offset="0" max-vertical-offset="527">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="1" selection-start="729" selection-end="729" vertical-scroll-proportion="-11.980392" vertical-offset="86" max-vertical-offset="935">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_button.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/gui/_button.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="14" selection-start="24" selection-end="24" vertical-scroll-proportion="-0.33333334" vertical-offset="0" max-vertical-offset="136">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_header.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/gui/_header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="26" selection-start="833" selection-end="833" vertical-scroll-proportion="-11.666667" vertical-offset="0" max-vertical-offset="1105">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,19 +154,46 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/main.dart" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/scss/config.scss" />
-        <option value="$PROJECT_DIR$/web/style.css" />
-        <option value="$PROJECT_DIR$/web/header.php" />
-        <option value="$PROJECT_DIR$/scss/gui/_icon.scss" />
-        <option value="$PROJECT_DIR$/web/functions.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/web/sidebar.php" />
-        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/web/searchorm.php" />
+        <option value="$PROJECT_DIR$/scss/responsive/_article.scss" />
+        <option value="$PROJECT_DIR$/web/functions.php" />
+        <option value="$PROJECT_DIR$/scss/gui/_quotes.scss" />
+        <option value="$PROJECT_DIR$/scss/gui/_table.scss" />
+        <option value="$PROJECT_DIR$/scss/gui/_quote.scss" />
+        <option value="$PROJECT_DIR$/scss/gui/_headings.scss" />
+        <option value="$PROJECT_DIR$/scss/gui/_content.scss" />
+        <option value="$PROJECT_DIR$/scss/content/_img.scss" />
+        <option value="$PROJECT_DIR$/scss/content/_anchor.scss" />
+        <option value="$PROJECT_DIR$/scss/content/_code.scss" />
+        <option value="$PROJECT_DIR$/scss/content/_table.scss" />
+        <option value="$PROJECT_DIR$/scss/content/_headings.scss" />
+        <option value="$PROJECT_DIR$/scss/content/_misc.scss" />
+        <option value="$PROJECT_DIR$/scss/content/_list.scss" />
+        <option value="$PROJECT_DIR$/scss/gui/_search-form.scss" />
+        <option value="$PROJECT_DIR$/web/main.dart" />
+        <option value="$PROJECT_DIR$/scss/gui/_sidebar.scss" />
+        <option value="$PROJECT_DIR$/web/partials/_analtytics.php" />
+        <option value="$PROJECT_DIR$/web/partials/_meta.php" />
         <option value="$PROJECT_DIR$/web/partials/_article.php" />
-        <option value="$PROJECT_DIR$/web/index.php" />
-        <option value="$PROJECT_DIR$/web/assets/partials/_article.php" />
+        <option value="$PROJECT_DIR$/web/partials/_disqus.php" />
         <option value="$PROJECT_DIR$/scss/gui/_article.scss" />
+        <option value="$PROJECT_DIR$/scss/content/_disqus.scss" />
+        <option value="$PROJECT_DIR$/web/index.php" />
+        <option value="$PROJECT_DIR$/web/searchform.php" />
+        <option value="$PROJECT_DIR$/scss/gui/_button.scss" />
+        <option value="$PROJECT_DIR$/scss/mixins.scss" />
+        <option value="$PROJECT_DIR$/scss/main.scss" />
+        <option value="$PROJECT_DIR$/scss/gui/_columns.scss" />
+        <option value="$PROJECT_DIR$/web/partials/_pagination.php" />
+        <option value="$PROJECT_DIR$/scss/responsive/_pagination.scss" />
+        <option value="$PROJECT_DIR$/scss/gui/_pagination.scss" />
+        <option value="$PROJECT_DIR$/web/header.php" />
+        <option value="$PROJECT_DIR$/scss/gui/_header.scss" />
+        <option value="$PROJECT_DIR$/scss/responsive/_columns.scss" />
+        <option value="$PROJECT_DIR$/scss/config.scss" />
+        <option value="$PROJECT_DIR$/scss/responsive/_header.scss" />
       </list>
     </option>
   </component>
@@ -154,7 +230,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -163,110 +238,201 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="responsive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dartgames.slemgrim.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../geist" />
+    <property name="options.lastSelected" value="dart.settings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
-  </component>
-  <component name="PublishConfig" serverName="dev" serverId="d460c24e-ca43-4b2b-8a74-d624d6d3b361" autoUpload="true" autoUploadExternalChanges="true">
-    <servers>
-      <server id="1204f92c-e404-466c-8992-5df6b2fe5f5e">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="1db5a5eb-1f02-4559-ae8d-8acb45336a9c">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="3d19ff1b-eefd-4fcc-9735-42d9d9f96fed">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="86f9d389-8fa7-49eb-bc93-f18785d45b5f">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="a69995b2-f96f-4f1d-b975-7bc489a23fa3">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="b3794169-976c-420f-b74a-a3e089f9c997">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="d460c24e-ca43-4b2b-8a74-d624d6d3b361">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/dartgames/wp-content/themes/dartgames" local="$PROJECT_DIR$/web" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="e1df543d-8fa5-430e-99c4-fdb0fb582b46">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="e42004bb-de50-439f-b0d4-d398339ddd2c">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="ebe0b902-33ba-4193-8ec7-b5935856164e">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="ed310d5e-9d5e-4f7d-bf33-60a52f73f3c4">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="A:\Projects\GitHub\dartgames.slemgrim.com\scss\responsive" />
       <recent name="A:\Projects\GitHub\dartgames.slemgrim.com\web" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\Projects\GitHub\dartgames.slemgrim.com\scss" />
+      <recent name="A:\Projects\GitHub\dartgames.slemgrim.com\scss\gui\content" />
       <recent name="A:\Projects\GitHub\dartgames.slemgrim.com\web\assets" />
       <recent name="A:\Projects\GitHub\dartgames.slemgrim.com\web" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" value="$PROJECT_DIR$/web/main.dart" />
+      <option name="scope" value="ALL" />
+      <option name="testName" value="main.dart" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -277,7 +443,7 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="d460c24e-ca43-4b2b-8a74-d624d6d3b361" server_name="dev">
       <method />
     </configuration>
     <list size="0" />
@@ -310,28 +476,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3347732" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3288889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25773746" sideWeight="0.6711111" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1656017" sideWeight="0.66444445" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3347732" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -351,115 +517,337 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/sidebar.php">
+    <entry file="file://$PROJECT_DIR$/web/partials/_article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
-          <folding>
-            <marker date="1392403070015" expanded="true" signature="23:382" placeholder="..." />
-            <marker date="1392403070015" expanded="true" signature="32:375" placeholder="..." />
-          </folding>
+        <state line="6" column="10" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.dart">
+    <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="11" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="527" />
+        <state line="10" column="53" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="867">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.dart">
+    <entry file="file://$PROJECT_DIR$/web/partials/_meta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="11" selection-start="203" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="527" />
+        <state line="16" column="0" selection-start="814" selection-end="864" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/footer.php">
+    <entry file="file://$PROJECT_DIR$/web/partials/_analytics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595" />
+        <state line="11" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="306">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+    <entry file="file://$PROJECT_DIR$/scss/responsive/_columns.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="399" selection-end="399" vertical-scroll-proportion="0.028571429" vertical-offset="204" max-vertical-offset="850" />
+        <state line="20" column="21" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="782">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/config.scss">
+    <entry file="file://$PROJECT_DIR$/web/partials/_disqus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="306">
+        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/content/_disqus.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="15" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="136">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/gui/_article.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="30" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/gui/_sidebar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="23" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1785">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="203" selection-end="203" vertical-scroll-proportion="-9.52" vertical-offset="0" max-vertical-offset="527" />
+        <state line="21" column="27" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="952" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/style.css">
+    <entry file="file://$PROJECT_DIR$/web/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="19" selection-start="453" selection-end="453" vertical-scroll-proportion="0.7010309" vertical-offset="0" max-vertical-offset="4573">
+        <state line="62" column="9" selection-start="2370" selection-end="2370" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1258" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="9" selection-start="2370" selection-end="2370" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1258" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="17" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="374" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/gui/_hero.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="26" selection-start="140" selection-end="140" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="323" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/responsive/_article.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="306" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/gui/_icon.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="814" selection-end="833" vertical-scroll-proportion="0.50183153" vertical-offset="219" max-vertical-offset="765" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/dart/dart-sdk/lib/html/dartium/html_dartium.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36512" column="24" selection-start="1215817" selection-end="1215817" vertical-scroll-proportion="0.50953203" vertical-offset="620410" max-vertical-offset="631567" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="48" selection-start="893" selection-end="893" vertical-scroll-proportion="-10.730769" vertical-offset="197" max-vertical-offset="1275" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/content/_table.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="-5.3333335" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/content/_quote.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="84" selection-end="84" vertical-scroll-proportion="-1.0" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/content/_list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="16" selection-start="376" selection-end="376" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/content/_anchor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="1" selection-start="224" selection-end="224" vertical-scroll-proportion="-4.3333335" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/content/_headings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="18" selection-start="341" selection-end="341" vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/content/_img.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="19" selection-start="311" selection-end="311" vertical-scroll-proportion="-4.980392" vertical-offset="86" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/content/_misc.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="1" selection-start="138" selection-end="138" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/content/_code.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="4" selection-start="0" selection-end="4" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.dart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="86819" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/gui/_search-form.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="15" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.65959954" vertical-offset="443" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="21" selection-start="890" selection-end="890" vertical-scroll-proportion="0.68" vertical-offset="51" max-vertical-offset="1037" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/partials/_analytics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/partials/_disqus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="874">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/gui/_article.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="30" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/content/_disqus.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="15" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.33333334" vertical-offset="0" max-vertical-offset="136">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="90" selection-start="1650" selection-end="1650" vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/partials/_meta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="814" selection-end="864" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/searchform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="69" selection-start="175" selection-end="175" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="10" selection-start="288" selection-end="288" vertical-scroll-proportion="-3.6470587" vertical-offset="52" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/gui/_button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="14" selection-start="24" selection-end="24" vertical-scroll-proportion="-0.33333334" vertical-offset="0" max-vertical-offset="136">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/gui/_article-list.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="100" selection-end="100" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="1" selection-start="729" selection-end="729" vertical-scroll-proportion="-11.980392" vertical-offset="86" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/gui/_columns.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="5" selection-start="1043" selection-end="1043" vertical-scroll-proportion="-12.980392" vertical-offset="273" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/gui/_sidebar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="23" selection-start="61" selection-end="61" vertical-scroll-proportion="-1.0424029" vertical-offset="936" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/partials/_pagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="37" selection-start="180" selection-end="180" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/responsive/_pagination.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="5" selection-start="94" selection-end="94" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/gui/_pagination.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="3" selection-start="530" selection-end="530" vertical-scroll-proportion="-12.333333" vertical-offset="0" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/partials/_article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="10" selection-start="267" selection-end="267" vertical-scroll-proportion="0.11670481" vertical-offset="0" max-vertical-offset="874">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="240" selection-end="240" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/gui/_icon.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="19" selection-start="789" selection-end="789" vertical-scroll-proportion="0.78125" vertical-offset="0" max-vertical-offset="765">
+        <state line="5" column="42" selection-start="199" selection-end="199" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="221">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/functions.php">
+    <entry file="file://$PROJECT_DIR$/scss/gui/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="42" selection-start="231" selection-end="262" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="442">
+        <state line="35" column="26" selection-start="833" selection-end="833" vertical-scroll-proportion="-11.666667" vertical-offset="0" max-vertical-offset="1105">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
+    <entry file="file://$PROJECT_DIR$/scss/responsive/_columns.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="7" selection-start="193" selection-end="193" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
-          <folding>
-            <marker date="1392403484172" expanded="true" signature="31:192" placeholder="..." />
-            <marker date="1392403484172" expanded="true" signature="40:50" placeholder="..." />
-            <marker date="1392403484172" expanded="true" signature="59:184" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="383" selection-end="383" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
-          <folding>
-            <marker date="1392403070015" expanded="true" signature="23:382" placeholder="..." />
-            <marker date="1392403070015" expanded="true" signature="32:375" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="21" selection-start="1220" selection-end="1220" vertical-scroll-proportion="-14.038462" vertical-offset="162" max-vertical-offset="986">
+        <state line="2" column="18" selection-start="68" selection-end="68" vertical-scroll-proportion="-0.6666667" vertical-offset="0" max-vertical-offset="799">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/partials/_article.php">
+    <entry file="file://$PROJECT_DIR$/scss/config.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="271" selection-end="271" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="187">
-          <folding>
-            <marker date="1392404428033" expanded="true" signature="33:270" placeholder="..." />
-            <marker date="1392404428033" expanded="true" signature="218:259" placeholder="..." />
-          </folding>
+        <state line="21" column="13" selection-start="348" selection-end="348" vertical-scroll-proportion="-7.0" vertical-offset="0" max-vertical-offset="527">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/gui/_article.scss">
+    <entry file="file://$PROJECT_DIR$/scss/responsive/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="355" selection-end="355" vertical-scroll-proportion="0.5483871" vertical-offset="0" max-vertical-offset="544">
+        <state line="14" column="33" selection-start="215" selection-end="215" vertical-scroll-proportion="0.2803298" vertical-offset="0" max-vertical-offset="849">
           <folding />
         </state>
       </provider>

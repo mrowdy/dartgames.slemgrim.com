@@ -4,12 +4,17 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/web/assets/css/packages" />
       <excludeFolder url="file://$MODULE_DIR$/web/assets/dart/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/web/assets/fonts/icons/packages" />
       <excludeFolder url="file://$MODULE_DIR$/web/assets/fonts/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/web/assets/images/packages" />
       <excludeFolder url="file://$MODULE_DIR$/web/assets/packages" />
       <excludeFolder url="file://$MODULE_DIR$/web/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/web/partials/packages" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sass-stdlib" level="application" />
+    <orderEntry type="library" name="Dart SDK" level="application" />
   </component>
 </module>
 

@@ -1,0 +1,42 @@
+.pagination {
+  clear: both;
+  text-align: center;
+  padding: 0 15px;
+  margin: 0;
+  position: relative;
+  height: 44px;
+
+  .alignleft,
+  .alignright {
+    position: absolute;
+    top: 0;
+  }
+
+  .alignleft {
+    left: 15px;
+  }
+
+  .alignright {
+    right: 15px;
+  }
+
+  a {
+    color: $whiteBoxColor;
+    text-decoration: none;
+    @include transition(color .5s);
+
+    &:hover {
+      color: lighten($highlightColor, 30%);
+    }
+  }
+
+  i {
+    @include btn();
+    margin: 0 10px;
+    visibility: visible;
+    line-height: 26px;
+  }
+}
+
+
+@import '../responsive/_pagination.scss';

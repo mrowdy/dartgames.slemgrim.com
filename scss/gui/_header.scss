@@ -31,7 +31,9 @@
     background-color: rgba(19, 68, 158, 0.7);
     box-shadow: 10px 0 20px rgba(19, 68, 158, 0.3);
     @include transition(opacity 1s);
-    opacity: 0; 
+    opacity: 0;
+    text-decoration: none;
+    color: $whiteBoxColor;
     
     &.show {
       opacity: 1;

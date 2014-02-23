@@ -12,6 +12,7 @@
 @import 'gui/_icon.scss';
 @import 'gui/_hero.scss';
 @import 'gui/_search-form.scss';
+@import 'gui/_pagination.scss';
 
 body,
 html {
@@ -40,21 +41,10 @@ html {
   }
 }
 
-.container {
-
-}
-
 .left {
   float: left;
 }
 
 .right {
   float: right;
-}
-
-.pagination {
-  clear: both;
-  text-align: center;
-  padding: 10px 15px;
-  margin: 0;
 }

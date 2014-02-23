@@ -11,3 +11,9 @@
     }
   }
 }
+
+@media all and (max-width: $brpt2) and (max-height: $brptH1) {
+  .header {
+    position: absolute;
+  }
+}

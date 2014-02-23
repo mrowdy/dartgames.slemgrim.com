@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="dev" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" autoUpload="Always" serverName="dartgames" autoUploadExternalChanges="true">
     <serverData>
+      <paths name="dartgames">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/wordpress/wp-content/themes/dartgames" local="$PROJECT_DIR$/web" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="dev">
         <serverdata>
           <mappings>

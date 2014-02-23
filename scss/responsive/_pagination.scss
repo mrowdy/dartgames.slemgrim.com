@@ -1,0 +1,7 @@
+@media all and (max-width: $brpt1) {
+  .pagination {
+    a {
+      visibility: collapse;
+    }
+  }
+}

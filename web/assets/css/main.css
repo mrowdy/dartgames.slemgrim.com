@@ -37,6 +37,8 @@
   -moz-transition: opacity 1s;
   transition: opacity 1s;
   opacity: 0;
+  text-decoration: none;
+  color: white;
 }
 .header .title.show {
   opacity: 1;
@@ -63,6 +65,11 @@
 @media all and (min-width: 960px) {
   .header .button {
     display: none;
+  }
+}
+@media all and (max-width: 960px) and (max-height: 400px) {
+  .header {
+    position: absolute;
   }
 }
 .columns {
@@ -97,7 +104,7 @@
 }
 .columns .left-col {
   background-color: #2f2f2f;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
 }
 .columns .right-col {
   margin: 0 0 0 -15px;
@@ -157,6 +164,7 @@
     float: left;
     width: 30%;
     margin: 0;
+    padding-top: 0;
     padding-right: 0;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -357,6 +365,9 @@
 .article a:hover {
   background-color: #13449e;
   color: white;
+}
+.article .disqus {
+  margin-top: 80px;
 }
 
 @media all and (min-width: 500px) {
@@ -655,6 +666,78 @@
   display: block;
 }
 
+.pagination {
+  clear: both;
+  text-align: center;
+  padding: 0 15px;
+  margin: 0;
+  position: relative;
+  height: 44px;
+}
+.pagination .alignleft,
+.pagination .alignright {
+  position: absolute;
+  top: 0;
+}
+.pagination .alignleft {
+  left: 15px;
+}
+.pagination .alignright {
+  right: 15px;
+}
+.pagination a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.pagination a:hover {
+  color: #5e90ec;
+}
+.pagination i {
+  color: #999999;
+  border: 1px solid #999999;
+  background: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 8px 12px;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  outline: none;
+  margin: 0 10px;
+  visibility: visible;
+  line-height: 26px;
+}
+.pagination i:hover {
+  color: #2f2f2f;
+  background-color: white;
+}
+.pagination i.inactive {
+  color: #4d4d4d;
+  border: 1px solid #4d4d4d;
+}
+.pagination i.nButton {
+  width: 100%;
+}
+.pagination i.menu {
+  color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.85);
+}
+.pagination i.menu:hover {
+  color: #2f2f2f;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media all and (max-width: 500px) {
+  .pagination a {
+    visibility: collapse;
+  }
+}
 body,
 html {
   margin: 0;
@@ -688,11 +771,4 @@ html {
 
 .right {
   float: right;
-}
-
-.pagination {
-  clear: both;
-  text-align: center;
-  padding: 10px 15px;
-  margin: 0;
 }

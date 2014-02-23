@@ -17,6 +17,7 @@
       float: left;
       width: 30%;
       margin: 0;
+      padding-top: 0;
       padding-right: 0;
       @include transform(translateX(0));
       overflow-y: auto;
