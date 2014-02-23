@@ -26,12 +26,20 @@
    }
   
   .right-col {
-    margin: 60px 0 0 -15px;
+    margin: 0 0 0 -15px;
+    padding: 60px 0 0 0;
     position: fixed;
+    z-index: 800;
     top: 0;
+    bottom: 0;
     @include transform(translateX(50%));
     z-index: 5;
-    padding-right: 10%;
+    padding-right: 0%;
+    min-height: 100%;
+    overflox-x: hidden;
+    overflow-y: scroll;
+    pointer-events: auto;
+
   }
   
   &.show {

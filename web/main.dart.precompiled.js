@@ -3973,16 +3973,11 @@ if(z===C.NU)return a
 return z.oj(a,!0)},
 qE:{
 "":"cv;",
-"%":"HTMLAppletElement|HTMLAreaElement|HTMLBRElement|HTMLBaseElement|HTMLBaseFontElement|HTMLCanvasElement|HTMLContentElement|HTMLDListElement|HTMLDataListElement|HTMLDetailsElement|HTMLDialogElement|HTMLDirectoryElement|HTMLDivElement|HTMLFontElement|HTMLFrameElement|HTMLFrameSetElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLImageElement|HTMLLabelElement|HTMLLegendElement|HTMLLinkElement|HTMLMarqueeElement|HTMLMenuElement|HTMLModElement|HTMLOListElement|HTMLOptGroupElement|HTMLParagraphElement|HTMLPreElement|HTMLQuoteElement|HTMLScriptElement|HTMLShadowElement|HTMLSourceElement|HTMLSpanElement|HTMLStyleElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTemplateElement|HTMLTitleElement|HTMLTrackElement|HTMLUListElement|HTMLUnknownElement;HTMLElement"},
+"%":"HTMLAppletElement|HTMLAreaElement|HTMLBRElement|HTMLBaseElement|HTMLBaseFontElement|HTMLBodyElement|HTMLCanvasElement|HTMLContentElement|HTMLDListElement|HTMLDataListElement|HTMLDetailsElement|HTMLDialogElement|HTMLDirectoryElement|HTMLDivElement|HTMLFontElement|HTMLFrameElement|HTMLFrameSetElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLImageElement|HTMLLabelElement|HTMLLegendElement|HTMLLinkElement|HTMLMarqueeElement|HTMLMenuElement|HTMLModElement|HTMLOListElement|HTMLOptGroupElement|HTMLParagraphElement|HTMLPreElement|HTMLQuoteElement|HTMLScriptElement|HTMLShadowElement|HTMLSourceElement|HTMLSpanElement|HTMLStyleElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTemplateElement|HTMLTitleElement|HTMLTrackElement|HTMLUListElement|HTMLUnknownElement;HTMLElement"},
 Gh:{
 "":"qE;",
 bu:function(a){return a.toString()},
 "%":"HTMLAnchorElement"},
-QP:{
-"":"qE;",
-gVs:function(a){return H.qI(H.qI(H.VM(new W.Cq(a,C.Zl.Ph,!1),[null]),"$isRX",[H.Kp(C.Zl,0)],"$asRX"),"$isRX",[W.ea],"$asRX")},
-gI9:function(a){return H.qI(H.qI(H.VM(new W.Cq(a,C.vr.Ph,!1),[null]),"$isRX",[H.Kp(C.vr,0)],"$asRX"),"$isRX",[W.ea],"$asRX")},
-"%":"HTMLBodyElement"},
 IF:{
 "":"qE;oc:name=,P:value=",
 "%":"HTMLButtonElement"},
@@ -4013,8 +4008,6 @@ bu:function(a){return a.localName},
 GE:function(a,b){return a.getAttribute(b)},
 Wk:function(a,b){return a.querySelector(b)},
 a7:function(a,b,c){return a.setAttribute(b,c)},
-gVs:function(a){return H.qI(H.qI(H.VM(new W.Cq(a,C.Zl.Ph,!1),[null]),"$isRX",[H.Kp(C.Zl,0)],"$asRX"),"$isRX",[W.ea],"$asRX")},
-gI9:function(a){return H.qI(H.qI(H.VM(new W.Cq(a,C.vr.Ph,!1),[null]),"$isRX",[H.Kp(C.vr,0)],"$asRX"),"$isRX",[W.ea],"$asRX")},
 $iscv:true,
 "%":";Element"},
 Al:{
@@ -4048,6 +4041,7 @@ tb:{
 "%":"HTMLIFrameElement"},
 Mi:{
 "":"qE;oc:name=,P:value=",
+$isMi:true,
 $iscv:true,
 $isKV:true,
 $isD0:true,
@@ -4478,15 +4472,15 @@ u.Zz()
 H.qI(u,"$isMO",[H.Kp(z,0)],"$asMO")
 H.qI(x,"$isVh",[null],"$asVh")
 H.qI(H.qI(H.VM(new P.u8(H.qI(x,"$isVh",[null],"$asVh")),[null]),"$isqh",[H.ip(x,"Kd",0)],"$asqh"),"$isqh",[J.yE],"$asqh").yI(new F.RR(v))
-s=C.BZ.Wk(document,".search-field")
-if(s!=null){z=J.RE(s)
-x=z.gI9(s)
-u=new F.ng(s)
-H.Xj(y,[x.$tv_jf()]).Gk(u)
-u=H.VM(new W.xC(0,x.uv,x.Ph,W.VF(u),x.Sg),[H.Kp(x,0)])
-u.Zz()
-H.qI(u,"$isMO",[H.Kp(x,0)],"$asMO")
-z=z.gVs(s)
+s=H.lD(C.BZ.Wk(document,".search-field"),"$isMi")
+if(s!=null){s.toString
+z=H.qI(H.qI(H.VM(new W.Cq(s,C.vr.Ph,!1),[null]),"$isRX",[H.Kp(C.vr,0)],"$asRX"),"$isRX",[W.ea],"$asRX")
+x=new F.ng(s)
+H.Xj(y,[z.$tv_jf()]).Gk(x)
+x=H.VM(new W.xC(0,z.uv,z.Ph,W.VF(x),z.Sg),[H.Kp(z,0)])
+x.Zz()
+H.qI(x,"$isMO",[H.Kp(z,0)],"$asMO")
+z=H.qI(H.qI(H.VM(new W.Cq(s,C.Zl.Ph,!1),[null]),"$isRX",[H.Kp(C.Zl,0)],"$asRX"),"$isRX",[W.ea],"$asRX")
 x=new F.Fs(s)
 H.Xj(y,[z.$tv_jf()]).Gk(x)
 x=H.VM(new W.xC(0,z.uv,z.Ph,W.VF(x),z.Sg),[H.Kp(z,0)])
@@ -4524,8 +4518,10 @@ return z.h(z,"show")},
 $isEH:true},
 Fs:{
 "":"Tp:11;c",
-call$1:function(a){var z=J.pP(this.c.parentElement.parentElement)
-return z.Rz(z,"show")},
+call$1:function(a){var z=this.c
+if(z.value.length!==0)return
+z=J.pP(z.parentElement.parentElement)
+z.Rz(z,"show")},
 $isEH:true}},1],["parallax","../lib/parallax.dart",,G,{
 "":"",
 Qq:{

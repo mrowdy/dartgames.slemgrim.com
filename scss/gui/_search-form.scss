@@ -56,7 +56,8 @@
     padding: 0;
     border: none;
     background: transparent;
-    @include transition(right .5s);
+    display: none;
+    outline: 0;
 
     i{
       color: $whiteBoxColor;
@@ -70,6 +71,7 @@
   &.show {
     .search-submit {
       right: 0;
+      display: block;
     }
   }
 }
