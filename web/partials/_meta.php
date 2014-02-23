@@ -14,3 +14,4 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 <?php wp_head(); ?>
+<?php get_template_part('partials/_analytics'); ?>
