@@ -1,0 +1,11 @@
+code,
+pre,
+.code {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+pre[class*="language-"] {
+  background: $quoteColor;
+}

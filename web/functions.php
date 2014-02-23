@@ -12,6 +12,7 @@ class Dartgames{
         add_action('widgets_init', array($this, 'widgets_init'));
         add_action('init', array($this, 'register_menues'));
         add_filter('image_send_to_editor', array($this, 'linked_images_class'), 10, 9);
+        add_filter('tablepress_use_default_css', '__return_false');
     }
 
     public function setup() {

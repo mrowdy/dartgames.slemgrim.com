@@ -1,0 +1,9 @@
+hr {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px dashed $backgroundColor;
+}
+
+p, hr, ul, ol {
+  margin: 15px 0;
+}

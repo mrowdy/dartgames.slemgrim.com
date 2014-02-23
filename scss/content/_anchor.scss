@@ -1,0 +1,14 @@
+
+a {
+  color: $highlightColor;
+  text-decoration: none;
+  @include transition(all 1s);
+  font-weight: bold;
+  padding: 5px;
+  margin: -5px;
+
+  &:hover {
+    background-color: $highlightColor;
+    color: $whiteBoxColor;
+  }
+}

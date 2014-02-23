@@ -1,0 +1,36 @@
+ul, ol {
+
+  margin: 0;
+  padding-left: 25px;
+}
+
+ul {
+  list-style-type: none;
+  li {
+    &:before {
+      position: absolute;
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: $highlightColor;
+      display: inline-block;
+      top: 12px;
+      left: -25px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 5px;
+    }
+    li {
+      &:before {
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+li {
+  margin: 0;
+  margin-left: 20px;
+  position: relative;
+}

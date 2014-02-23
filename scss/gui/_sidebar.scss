@@ -12,6 +12,34 @@
     border-bottom: 1px solid  rgba(0, 0, 0, .3);
     position: relative;
 
+    &:hover {
+      a{
+        color: lighten($highlightColor, 30%);
+      }
+      li a {
+        color: $whiteBoxColor;
+      }
+
+      li:hover a {
+        color: lighten($highlightColor, 30%);
+      }
+    }
+
+    &.current_page_item,
+    &.current_page_ancestor {
+      a {
+        color: lighten($highlightColor, 30%);
+      }
+      li {
+        a {
+          color: $whiteBoxColor;
+        }
+        &.current_page_item a {
+          color: lighten($highlightColor, 30%);
+        }
+      }
+    }
+
     ul {
       background-color: $backgroundColor;
       box-shadow: inset 0 3px 15px rgba(0, 0, 0, 0.5), inset 0 -1px 15px rgba(0, 0, 0, 0.3);
@@ -66,6 +94,7 @@
       margin-left: 30px;
       text-decoration: none;
       font-weight: 100;
+      @include transition(color .5s);
     }
   }
 }

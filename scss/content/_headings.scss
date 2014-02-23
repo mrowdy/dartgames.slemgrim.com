@@ -1,0 +1,29 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headingFont;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+h1,
+h2{
+  border-bottom: 2px dashed $backgroundColor;
+  padding-bottom: 10px;
+}
+
+.title {
+  margin: 10px 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: $headingFont;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #333;
+}
