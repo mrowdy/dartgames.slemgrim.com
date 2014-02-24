@@ -1,0 +1,6 @@
+<div class="share">
+	<hr />
+	<a target="blank" class="share-tw icon-twitter" title="<?php echo urlencode( get_the_title() ); ?>" href="https://twitter.com/share?text=<?php echo urlencode( get_the_title() ); ?>%20-%20&amp;url=<?php the_permalink(); ?>&amp;via=slemgrim" onclick="window.open('https://twitter.com/share?text=<?php echo urlencode( get_the_title() ); ?>%20-%20&amp;url=<?php the_permalink(); ?>&amp;via=slemgrim','twitter','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" ></a>
+	<a target="blank" class="share-gb icon-google" onclick="window.open('https://plus.google.com/share?url=<?php the_permalink(); ?>','gplusshare','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"></a>
+	<a target="blank" class="share-fb icon-facebook" title="<?php echo urlencode( get_the_title() ); ?>" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>" onclick="window.open('http://www.facebook.com/share.php?u=<?php the_permalink(); ?>','facebook','width=450,height=300,left='+(screen.availWidth/2-375)+',top='+(screen.availHeight/2-150)+'');return false;"></a>
+</div>

@@ -3,5 +3,6 @@
     <div class="excerpt">
         <?php the_content(); ?>
     </div>
+    <?php get_template_part('partials/_share'); ?>
     <?php get_template_part('partials/_disqus'); ?>
 </article>

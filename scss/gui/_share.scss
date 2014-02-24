@@ -1,0 +1,33 @@
+.share {
+	a {
+	    float: left;
+		display: block;
+		width: 45px;
+		height: 45px;
+		margin: 0 10px 0 0;
+		padding: 15px;
+		line-height: 1;
+		text-align: center;
+		background-color: red;
+		color: $whiteBoxColor;
+		@include transition(background-color .5s);
+
+		&.share-fb {
+			background-color: #405c98;
+		}
+
+		&.share-tw {
+			background-color: #4bace6;
+		}
+
+		&.share-gp {
+			background-color: #cd5845; 
+		}
+
+		&:hover {
+			background-color: $highlightColor;
+		}
+	}
+}
+
+@import '../responsive/_share.scss';

@@ -22,19 +22,31 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+ 
 .icon-list:before {
   content: "\e600";
 }
 .icon-search:before {
-  content: "\e601";
+  content: "\e601"; 
 }
 .icon-arrow-left:before {
-  content: "\e602";
+  content: "\e602"; 
 }
 .icon-arrow-right:before {
   content: "\e603";
 }
 .icon-home:before {
   content: "\e604";
+}
+.icon-twitter:before {
+  content: "\e605";
+}
+.icon-facebook:before {
+  content: "\e606";
+}
+.icon-google:before {
+  content: "\e607";
+}
+.icon-github:before {
+  content: "\e608";
 }

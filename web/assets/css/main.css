@@ -158,6 +158,7 @@
   .columns .left-col {
     width: 70%;
     float: left;
+    overflow-x: visible;
   }
   .columns .right-col {
     position: relative;
@@ -209,7 +210,7 @@
 
 .article {
   padding: 15px 15px 40px;
-  overflow: hidden;
+  position: relative;
 }
 .article table {
   width: 100%;
@@ -553,6 +554,22 @@
   content: "\e604";
 }
 
+.icon-twitter:before {
+  content: "\e605";
+}
+
+.icon-facebook:before {
+  content: "\e606";
+}
+
+.icon-google:before {
+  content: "\e607";
+}
+
+.icon-github:before {
+  content: "\e608";
+}
+
 .hero {
   height: 100px;
   background-image: url(../images/header-picture.jpg);
@@ -736,6 +753,48 @@
 @media all and (max-width: 500px) {
   .pagination a {
     visibility: collapse;
+  }
+}
+.share a {
+  float: left;
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 0 10px 0 0;
+  padding: 15px;
+  line-height: 1;
+  text-align: center;
+  background-color: red;
+  color: white;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.share a.share-fb {
+  background-color: #405c98;
+}
+.share a.share-tw {
+  background-color: #4bace6;
+}
+.share a.share-gp {
+  background-color: #cd5845;
+}
+.share a:hover {
+  background-color: #13449e;
+}
+
+@media all and (min-width: 1050px) {
+  .share {
+    position: absolute;
+    top: 80px;
+    left: -60px;
+  }
+  .share hr {
+    display: none;
+  }
+  .share a {
+    float: none;
+    margin-bottom: 10px;
   }
 }
 body,

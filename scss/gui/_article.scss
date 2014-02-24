@@ -1,6 +1,6 @@
 .article {
   padding: 15px 15px 40px;
-  overflow: hidden;
+  position: relative;
 
   @import '../content/_table';
   @import '../content/_quote';

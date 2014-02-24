@@ -1,0 +1,16 @@
+@media all and (min-width: $brpt2 + 90px) {
+  .share {
+  	position: absolute;
+  	top: 80px;
+  	left: -60px;
+
+  	hr {
+  		display: none;
+  	}
+
+  	a {
+  		float: none;
+  		margin-bottom: 10px;
+  	}
+  }
+}
