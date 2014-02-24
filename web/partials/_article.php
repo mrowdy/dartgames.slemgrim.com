@@ -4,5 +4,7 @@
         <?php the_content(); ?>
     </div>
     <?php get_template_part('partials/_share'); ?>
-    <?php get_template_part('partials/_disqus'); ?>
+    <?php if (comments_open()): ?>
+    	<?php get_template_part('partials/_disqus'); ?>
+	<?php endif;?>
 </article>
