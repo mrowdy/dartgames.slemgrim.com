@@ -28,11 +28,15 @@
                             <?php endwhile; ?>
                         <?php else : ?>
                             <li>
-                               no posts
+                                <div class="whitebox article">
+                                    <h2>No posts found!</h2>
+                                </Div>
                             </li>
                         <?php endif; ?>
                     </ul>
-                    <?php get_template_part('partials/_pagination'); ?>
+                    <?php if(is_page()): ?>
+                        <?php get_template_part('partials/_pagination'); ?>
+                    <?php endif; ?>
                 </div>
                 <div class="right-col">
                     <?php get_sidebar(); ?>

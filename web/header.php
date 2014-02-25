@@ -3,6 +3,6 @@
         <button class="button menu right">
             <span class="icon-list"></span>
         </button>
-        <a href="<?php echo home_url(); ?>" class="title"><?php wp_title(); ?></a>
+        <a href="<?php echo home_url(); ?>" class="title"><?php bloginfo('name'); ?></a>
     </div>
 </header>
