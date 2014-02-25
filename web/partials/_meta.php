@@ -15,6 +15,14 @@
 <link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_stylesheet_directory_uri(); ?>/touch-icon-iphone-retina.png">
 <link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_stylesheet_directory_uri(); ?>/touch-icon-ipad-retina.png">
 
+
+<meta property="og:url" content="<?php the_permalink() ?>"/>  
+<meta property="og:title" content="<?php single_post_title(''); ?>" />  
+<meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />  
+<meta property="og:type" content="article" />  
+<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />  
+<meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/og-image.png"/>
+
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>

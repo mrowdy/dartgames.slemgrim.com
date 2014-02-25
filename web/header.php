@@ -3,6 +3,6 @@
         <button class="button menu right">
             <span class="icon-list"></span>
         </button>
-        <a href="<?php echo home_url(); ?>" class="title">Dart Games 101</a>
+        <a href="<?php echo home_url(); ?>" class="title"><?php wp_title(); ?></a>
     </div>
 </header>
