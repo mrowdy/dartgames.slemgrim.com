@@ -219,6 +219,9 @@ class Minefield{
    * Returns list of mine indexes
    */
   List<int> _generateMines(int count){
+    if(count >= _rows * _cols){
+      count =  _rows * _cols;
+    }
     List<int> mineIndices = new List<int>();
     Random rand = new Random();
     while(mineIndices.length < count){
