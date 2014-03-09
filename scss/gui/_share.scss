@@ -1,4 +1,6 @@
 .share {
+    @include clearfix();
+ 
 	a {
 	    float: left;
 		display: block;

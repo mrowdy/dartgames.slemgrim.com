@@ -5,7 +5,7 @@
       <paths name="dartgames">
         <serverdata>
           <mappings>
-            <mapping deploy="/wordpress/wp-content/themes/dartgames" local="$PROJECT_DIR$/web" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$/web" web="/" />
           </mappings>
         </serverdata>
       </paths>

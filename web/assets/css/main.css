@@ -755,6 +755,16 @@
     visibility: collapse;
   }
 }
+.share {
+  *zoom: 1;
+}
+.share:before, .share:after {
+  content: " ";
+  display: table;
+}
+.share:after {
+  clear: both;
+}
 .share a {
   float: left;
   display: block;
