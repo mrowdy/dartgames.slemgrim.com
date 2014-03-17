@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #363944;
+  color: white;
+}
+
+.outer {
+  width: 720px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.container {
+  float: left;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid white;
+}
+
+.game,
+button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.game {
+  font-size: 40px;
+}
